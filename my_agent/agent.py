@@ -1,32 +1,32 @@
 from strands import Agent, tool
 from strands_tools import calculator, current_time, python_repl
-import boto3
 
-# Bedrock client (credentials already set)
-bedrock = boto3.client(
-    service_name="bedrock-runtime",
-    region_name="us-east-1",
-    aws_access_key_id="AKIA5KCDYHD2U5DEBI6K",
-    aws_secret_access_key="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"
-)
-
-# Custom tool
+# Define a custom tool as a Python function using the @tool decorator
 @tool
 def letter_counter(word: str, letter: str) -> int:
-    """Count occurrences of a specific letter in a word."""
+    """
+    Count occurrences of a specific letter in a word.
+
+    Args:
+        word (str): The input word to search in
+        letter (str): The specific letter to count
+
+    Returns:
+        int: The number of occurrences of the letter in the word
+    """
     if not isinstance(word, str) or not isinstance(letter, str):
         return 0
+
     if len(letter) != 1:
         raise ValueError("The 'letter' parameter must be a single character")
+
     return word.lower().count(letter.lower())
 
-# Tell strands NOT to stream
-agent = Agent(
-    tools=[calculator, current_time, python_repl, letter_counter],
-    model="us.anthropic.claude-sonnet-4-20250514-v1:0",          # <-- crucial
-)
+# Create an agent with tools from the community-driven strands-tools package
+# as well as our custom letter_counter tool
+agent = Agent(tools=[calculator, current_time, python_repl, letter_counter])
 
-# Run the prompt
+# Ask the agent a question that uses the available tools
 message = """
 I have 4 requests:
 
@@ -36,5 +36,6 @@ I have 4 requests:
 4. Output a script that does what we just spoke about!
    Use your python tools to confirm that the script works before outputting it
 """
-result = agent(message)
-print(result)
+agent(message)
+
+# run using python -u my_agent/agent.py
