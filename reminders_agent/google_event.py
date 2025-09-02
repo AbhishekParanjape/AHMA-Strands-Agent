@@ -1,6 +1,8 @@
 # how the Google Calendar API works, using create_event function
 # strands to fill in the arguments 
 
+SCOPES = ['https://www.googleapis.com/auth/calendar']
+
 def get_calendar_service():
     creds = None
     if os.path.exists('token.json'):
