@@ -19,3 +19,6 @@ awscli-bundle/packages/setup/setuptools-75.4.0-py3-none-any.whl
 awscli-bundle/packages/setup/wheel-0.45.1-py3-none-any.whl
 awscli-bundle/install
 awscli-bundle.zip
+credentials.json
+token.json
+.gitignore
