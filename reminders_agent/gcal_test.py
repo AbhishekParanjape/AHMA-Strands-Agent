@@ -1,3 +1,5 @@
+# Google Cal API demo code
+
 from __future__ import print_function
 import datetime
 import os.path

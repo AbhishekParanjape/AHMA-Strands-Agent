@@ -1,10 +1,3 @@
-from __future__ import print_function
-import datetime
-import os.path
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
-from googleapiclient.discovery import build
 from google_event import create_event
 
 from strands import Agent, tool
@@ -43,6 +36,11 @@ agent = Agent(
     tools=[create_calendar_event])
 
 message = """
+I will be eating pancakes now on 2 sept 2025 with eliana, zoe, abhi, and aish at 10:45pm at Cendana Buttery. 
+
+"""
+
+"""
 I have a doctors appointment tomorrow 3 september 2025 at 4pm at Changi General Hospital. 
 """
 """
