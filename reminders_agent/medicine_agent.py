@@ -2,6 +2,7 @@ from strands import Agent, tool
 from strands_tools import calculator, current_time, python_repl
 from strands_tools import image_reader
 import boto3
+import os 
 
 # Bedrock client (credentials already set)
 bedrock = boto3.client(
@@ -13,9 +14,11 @@ bedrock = boto3.client(
 agent = Agent(tools=[image_reader])
 
 # Basic usage - read an image file
-result = agent.tool.image_reader(image_path="/Users/heyyzel/Documents/Agentic AI Hackathon/clueless/med_images_test/medtest1.jpg")
+for image in os.listdir("med_images_test"):
+    result = agent.tool.image_reader(image_path="med_images_test/" + image)
 
 message = """
-How often should I take my medicine?
+What is my medicine consumption schedule like?
 """
+
 agent(message)
