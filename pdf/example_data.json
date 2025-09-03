@@ -1,0 +1,25 @@
+{
+  "insured_full_name": "TAN JIA WEI",
+  "insured_nric": "S1234567D",
+  "insured_gender": "Male",
+  "insured_relationship_to_policyholder": "Self",
+  "insured_employment_status": "Employed",
+  "insured_occupation": "Software Engineer",
+  "insured_dob_ddmmyyyy": "05/08/1999",
+  "employer_name_address": "Fictional Pte Ltd, 123 Shenton Way, Singapore",
+  "employment_from_ddmmyyyy": "01/07/2023",
+  "employment_to_ddmmyyyy": "01/09/2025",
+  "duties_at_work": "Full-stack development, on-call rotations",
+  "insured_email": "jiawei@example.com",
+  "policy_numbers": "AB1234567; CD7654321",
+  "plan_type": "IncomeShield",
+  "claim_number": "CLM-2025-0001",
+  "claim_type_individual": [
+    "Accident Benefit"
+  ],
+  "claim_type_incomeshield": [
+    "Inpatient/ Day surgery"
+  ],
+  "claim_type_affinity": [],
+  "claim_type_mhs": []
+}

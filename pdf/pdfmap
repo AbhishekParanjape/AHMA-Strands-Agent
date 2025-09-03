@@ -1,0 +1,5742 @@
+{
+  "undefined": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      421.08,
+      490.68,
+      548.76,
+      499.92
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined",
+    "best_label": "Name"
+  },
+  "undefined_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      80.88,
+      419.52,
+      208.56,
+      428.76
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_2",
+    "best_label": "Name"
+  },
+  "Policy numbers": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      373.92,
+      211.8,
+      399.96
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Policy numbers",
+    "best_label": "Name"
+  },
+  "Plan type": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      213.84,
+      373.92,
+      381.84,
+      399.96
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Plan Type",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Plan type",
+    "best_label": "Plan Type"
+  },
+  "Claim number": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      383.88,
+      373.92,
+      551.88,
+      399.96
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Plan type",
+      "Phone",
+      "Name",
+      "Email",
+      "Claim Number",
+      "Address",
+      "Date"
+    ],
+    "name": "Claim number",
+    "best_label": "Claim Number"
+  },
+  "Full name of insured as shown in NRICFIN cardPassportBirth Certificate": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      316.92,
+      308.16,
+      343.08
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Full name of insured as shown in NRICFIN cardPassportBirth Certificate",
+    "best_label": "Name"
+  },
+  "NRICFINPassportBirth Certificate number of insured": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      309.84,
+      316.92,
+      455.88,
+      333.84
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "NRICFINPassportBirth Certificate number of insured",
+    "best_label": "Name"
+  },
+  "Relationship to policyholder": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      280.08,
+      308.16,
+      306.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Male     Female",
+      "Phone",
+      "Birth Certificate number \nof insuredGender\n Male     Female",
+      "Relationship To Policyholder",
+      "Name",
+      "Email",
+      "Address",
+      "Date",
+      "of insuredGender"
+    ],
+    "name": "Relationship to policyholder",
+    "best_label": "Relationship To Policyholder"
+  },
+  "Occupation If unemployed please indicate last occupation": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      243.24,
+      308.16,
+      269.4
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Occupation If unemployed please indicate last occupation",
+    "best_label": "Name"
+  },
+  "Date of birth ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      457.56,
+      243.24,
+      551.88,
+      269.4
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Date of birth ddmmyyyy",
+    "best_label": "Date"
+  },
+  "Name and address of employer or last employer if unemployed": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      206.4,
+      308.16,
+      232.56
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Name and address of employer or last employer if unemployed",
+    "best_label": "Name"
+  },
+  "From": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      332.16,
+      215.04,
+      400.2,
+      224.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "if different",
+      "Phone",
+      "Self EmployedDate of birth (dd/mm/yyyy)",
+      "days",
+      "From",
+      "Name",
+      "Email",
+      "your particulars",
+      "Address",
+      "Date",
+      "Important notĞƐ"
+    ],
+    "name": "From",
+    "best_label": "From"
+  },
+  "To": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      416.64,
+      215.04,
+      484.68,
+      224.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "CEGIS",
+      "Hospitalisation Benefit",
+      "Scan",
+      "Accident Benefit\n Dread Disease Benefit\n Hospitalisation Benefit",
+      "Email",
+      "Phone",
+      "Self EmployedDate of birth (dd/mm/yyyy)",
+      "of \nthis form",
+      "To",
+      "Dread Disease Benefit",
+      "Important notĞƐ",
+      "Male     Female",
+      "Birth Certificate number \nof insuredGender\n Male     Female\nRelationship",
+      "Accident Benefit",
+      "HomeTeamNS",
+      "(Individual Policies)",
+      "Date",
+      "please submit the duly completed claim form",
+      "From",
+      "Name",
+      "Address",
+      "declaration and authorisation\nprovided in this form relating to the insured shall be taken to refer",
+      "of insuredGender"
+    ],
+    "name": "To",
+    "best_label": "To"
+  },
+  "Duties performed at work": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      169.56,
+      551.88,
+      195.72
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Self EmployedDate of birth (dd/mm/yyyy)",
+      "Name",
+      "From     To",
+      "Email",
+      "Duties Performed At Work",
+      "Address",
+      "Date"
+    ],
+    "name": "Duties performed at work",
+    "best_label": "Duties Performed At Work"
+  },
+  "Email address of insured": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      310.2,
+      132.72,
+      551.88,
+      158.88
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Duties performed at work",
+      "Email Address Of Insured",
+      "Name",
+      "From     To",
+      "Email",
+      "Contact number of insured",
+      "Address",
+      "Date"
+    ],
+    "name": "Email address of insured",
+    "best_label": "Email Address Of Insured"
+  },
+  "Full name as shown in NRICFIN cardPassport of policyholderassignee if policy is assigned": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.08,
+      75.72,
+      308.28,
+      92.64
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Full name as shown in NRICFIN cardPassport of policyholderassignee if policy is assigned",
+    "best_label": "Name"
+  },
+  "NRICFINPassport number of policyholder assignee if policy is assigned": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      309.6,
+      75.72,
+      455.64,
+      92.64
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "NRICFINPassport number of policyholder assignee if policy is assigned",
+    "best_label": "Name"
+  },
+  "undefined_12": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      263.4,
+      759.84,
+      399.6,
+      778.92
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "undefined_12",
+    "best_label": "Date"
+  },
+  "undefined_13": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      263.4,
+      738.84,
+      399.6,
+      757.92
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "undefined_13",
+    "best_label": "Date"
+  },
+  "undefined_14": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      263.4,
+      717.96,
+      399.6,
+      737.04
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "undefined_14",
+    "best_label": "Date"
+  },
+  "i Diagnosis": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      112.08,
+      633.855,
+      548.76,
+      652.935
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "i Diagnosis",
+    "best_label": "Date"
+  },
+  "ii Date symptoms started ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      206.76,
+      612.48,
+      320.28,
+      631.56
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "ii Date symptoms started ddmmyyyy",
+    "best_label": "Date"
+  },
+  "iii Describe in detail all symptoms and nature of medical conditiondisability suffered": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.92,
+      542.64,
+      551.64,
+      594.0
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "iii Describe in detail all symptoms and nature of medical conditiondisability suffered",
+    "best_label": "Date"
+  },
+  "Relationship of family memberRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      81.96,
+      468.6,
+      190.8,
+      493.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Relationship of family memberRow1",
+    "best_label": "Date"
+  },
+  "Nature of illnessRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      192.6,
+      468.6,
+      281.4,
+      493.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Nature of illnessRow1",
+    "best_label": "Date"
+  },
+  "Date of diagnosisRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      283.2,
+      468.6,
+      346.68,
+      493.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Date of diagnosisRow1",
+    "best_label": "Date"
+  },
+  "Age diagnosedRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      348.48,
+      468.6,
+      403.32,
+      493.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Age diagnosedRow1",
+    "best_label": "Date"
+  },
+  "Treatment detailsRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      405.12,
+      468.6,
+      547.92,
+      493.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Treatment detailsRow1",
+    "best_label": "Date"
+  },
+  "Relationship of family memberRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      81.96,
+      443.16,
+      190.8,
+      467.52
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Relationship of family memberRow2",
+    "best_label": "Date"
+  },
+  "Nature of illnessRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      192.6,
+      443.16,
+      281.4,
+      467.52
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Nature of illnessRow2",
+    "best_label": "Date"
+  },
+  "Date of diagnosisRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      283.2,
+      443.16,
+      346.68,
+      467.52
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Date of diagnosisRow2",
+    "best_label": "Date"
+  },
+  "Age diagnosedRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      348.48,
+      443.16,
+      403.32,
+      467.52
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Age diagnosedRow2",
+    "best_label": "Date"
+  },
+  "Treatment detailsRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      405.12,
+      443.16,
+      547.92,
+      467.52
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Treatment detailsRow2",
+    "best_label": "Date"
+  },
+  "Relationship of family memberRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      81.96,
+      417.6,
+      190.8,
+      442.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Relationship of family memberRow3",
+    "best_label": "Date"
+  },
+  "Nature of illnessRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      192.6,
+      417.6,
+      281.4,
+      442.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Nature of illnessRow3",
+    "best_label": "Date"
+  },
+  "Date of diagnosisRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      283.2,
+      417.6,
+      346.68,
+      442.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Date of diagnosisRow3",
+    "best_label": "Date"
+  },
+  "Age diagnosedRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      348.48,
+      417.6,
+      403.32,
+      442.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Age diagnosedRow3",
+    "best_label": "Date"
+  },
+  "Treatment detailsRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      405.12,
+      417.6,
+      547.92,
+      442.08
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Treatment detailsRow3",
+    "best_label": "Date"
+  },
+  "i Date of accident ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      184.32,
+      381.12,
+      297.84,
+      400.2
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "i Date of accident ddmmyyyy",
+    "best_label": "Date"
+  },
+  "ii Time of accident": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      381.72,
+      381.12,
+      495.24,
+      400.2
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "ii Time of accident",
+    "best_label": "Date"
+  },
+  "iii Place of accident": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      137.64,
+      360.24,
+      548.76,
+      379.32
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "iii Place of accident",
+    "best_label": "Date"
+  },
+  "iv Detailed description of nature of injuriesdisability suffered": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.92,
+      279.0,
+      551.64,
+      341.76
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "iv Detailed description of nature of injuriesdisability suffered",
+    "best_label": "Description"
+  },
+  "v Detailed description of accident Please enclose a copy of the police report if any": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.92,
+      205.32,
+      551.64,
+      267.96
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "v Detailed description of accident Please enclose a copy of the police report if any",
+    "best_label": "Description"
+  },
+  "vi If you are claiming for accidental injuries resulting in inpatient dental treatment please advise which toothteeth were injured Waswere the injured teeth sound and natural Yes No": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.92,
+      131.64,
+      551.64,
+      180.72
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "vi If you are claiming for accidental injuries resulting in inpatient dental treatment please advise which toothteeth were injured Waswere the injured teeth sound and natural Yes No",
+    "best_label": "Date"
+  },
+  "Others_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      286.44,
+      107.28,
+      357.36,
+      117.84
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Others_3",
+    "best_label": "Date"
+  },
+  "Start Date ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      152.64,
+      65.4,
+      266.16,
+      84.48
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "Start Date ddmmyyyy",
+    "best_label": "Date"
+  },
+  "End Date ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      363.96,
+      65.4,
+      477.48,
+      84.48
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "End Date ddmmyyyy",
+    "best_label": "Date"
+  },
+  "If not confined please briefly describe insureds daily activities": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      273.96,
+      44.4,
+      495.12,
+      63.48
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "If not confined please briefly describe insureds daily activities",
+    "best_label": "Date"
+  },
+  "Name of hospitalRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      81.96,
+      711.48,
+      321.12,
+      735.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of hospitalRow1",
+    "best_label": "Name"
+  },
+  "From ddmmyyyyRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      322.92,
+      711.48,
+      434.52,
+      735.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "From ddmmyyyyRow1",
+    "best_label": "Name"
+  },
+  "To ddmmyyyyRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      436.32,
+      711.48,
+      547.92,
+      735.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "To ddmmyyyyRow1",
+    "best_label": "Name"
+  },
+  "Name of hospitalRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      81.96,
+      685.92,
+      321.12,
+      710.4
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of hospitalRow2",
+    "best_label": "Name"
+  },
+  "From ddmmyyyyRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      322.92,
+      685.92,
+      434.52,
+      710.4
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "From ddmmyyyyRow2",
+    "best_label": "Name"
+  },
+  "To ddmmyyyyRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      436.32,
+      685.92,
+      547.92,
+      710.4
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "To ddmmyyyyRow2",
+    "best_label": "Name"
+  },
+  "Name of hospitalRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      81.96,
+      660.36,
+      321.12,
+      684.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of hospitalRow3",
+    "best_label": "Name"
+  },
+  "From ddmmyyyyRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      322.92,
+      660.36,
+      434.52,
+      684.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "From ddmmyyyyRow3",
+    "best_label": "Name"
+  },
+  "To ddmmyyyyRow3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      436.32,
+      660.36,
+      547.92,
+      684.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "To ddmmyyyyRow3",
+    "best_label": "Name"
+  },
+  "Start Date ddmmyyyy_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      165.72,
+      614.64,
+      279.24,
+      630.96
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Start Date ddmmyyyy_2",
+    "best_label": "Date"
+  },
+  "End Date ddmmyyyy_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      368.04,
+      614.64,
+      481.56,
+      630.96
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "End Date ddmmyyyy_2",
+    "best_label": "Date"
+  },
+  "Please provide the name and address of referring doctorhospital 1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      69.6,
+      555.12,
+      548.76,
+      571.44
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Please provide the name and address of referring doctorhospital 1",
+    "best_label": "Name"
+  },
+  "Please provide the name and address of referring doctorhospital 2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      69.6,
+      537.0,
+      548.76,
+      553.32
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Please provide the name and address of referring doctorhospital 2",
+    "best_label": "Name"
+  },
+  "4 Please provide the name contact number and address of the doctor who is treating the insured for his current conditioninjury": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.92,
+      460.8,
+      551.64,
+      506.52
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "4 Please provide the name contact number and address of the doctor who is treating the insured for his current conditioninjury",
+    "best_label": "Name"
+  },
+  "Surgical operationprocedureRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      388.68,
+      296.76,
+      417.6
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Surgical operationprocedureRow1",
+    "best_label": "Name"
+  },
+  "Dates of operationprocedure ddmmyyyyRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      388.68,
+      424.32,
+      417.6
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Dates of operationprocedure ddmmyyyyRow1",
+    "best_label": "Date"
+  },
+  "Surgical codetable please refer to your doctorRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      388.68,
+      551.88,
+      417.6
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Surgical codetable please refer to your doctorRow1",
+    "best_label": "Name"
+  },
+  "Surgical operationprocedureRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      358.92,
+      296.76,
+      387.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Surgical operationprocedureRow2",
+    "best_label": "Name"
+  },
+  "Dates of operationprocedure ddmmyyyyRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      358.92,
+      424.32,
+      387.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Dates of operationprocedure ddmmyyyyRow2",
+    "best_label": "Date"
+  },
+  "Surgical codetable please refer to your doctorRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      358.92,
+      551.88,
+      387.84
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Surgical codetable please refer to your doctorRow2",
+    "best_label": "Name"
+  },
+  "a Reason why the insureds conditiondisability is treated outside of Singapore": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.44,
+      312.0,
+      552.12,
+      331.2
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "a Reason why the insureds conditiondisability is treated outside of Singapore",
+    "best_label": "Name"
+  },
+  "b Date the insured left Singapore ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.44,
+      282.24,
+      552.12,
+      301.44
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "b Date the insured left Singapore ddmmyyyy",
+    "best_label": "Date"
+  },
+  "c The purpose of the overseas visit": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.44,
+      252.48,
+      552.12,
+      271.68
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "c The purpose of the overseas visit",
+    "best_label": "Name"
+  },
+  "d What was the intended length of the overseas visit": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.44,
+      222.72,
+      297.0,
+      241.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "d What was the intended length of the overseas visit",
+    "best_label": "Name"
+  },
+  "From ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.56,
+      222.72,
+      424.56,
+      241.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "From ddmmyyyy",
+    "best_label": "Name"
+  },
+  "To ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.12,
+      222.72,
+      552.12,
+      241.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "To ddmmyyyy",
+    "best_label": "Name"
+  },
+  "Name of doctorRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      162.0,
+      169.2,
+      190.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of doctorRow1",
+    "best_label": "Name"
+  },
+  "Name and address of clinichospitalRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      171.24,
+      162.0,
+      296.76,
+      190.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name and address of clinichospitalRow1",
+    "best_label": "Name"
+  },
+  "Dates of consultation ddmmyyyyRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      162.0,
+      424.32,
+      190.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Dates of consultation ddmmyyyyRow1",
+    "best_label": "Date"
+  },
+  "Reasons for consultationRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      162.0,
+      551.88,
+      190.92
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Reasons for consultationRow1",
+    "best_label": "Name"
+  },
+  "Name of doctorRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      132.24,
+      169.2,
+      161.16
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of doctorRow2",
+    "best_label": "Name"
+  },
+  "Name and address of clinichospitalRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      171.24,
+      132.24,
+      296.76,
+      161.16
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name and address of clinichospitalRow2",
+    "best_label": "Name"
+  },
+  "Dates of consultation ddmmyyyyRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      132.24,
+      424.32,
+      161.16
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Dates of consultation ddmmyyyyRow2",
+    "best_label": "Date"
+  },
+  "Reasons for consultationRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      132.24,
+      551.88,
+      161.16
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Reasons for consultationRow2",
+    "best_label": "Name"
+  },
+  "Name of doctorRow1_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      68.4,
+      169.2,
+      97.32
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of doctorRow1_2",
+    "best_label": "Name"
+  },
+  "Name and address of clinichospitalRow1_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      171.24,
+      68.4,
+      296.76,
+      97.32
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name and address of clinichospitalRow1_2",
+    "best_label": "Name"
+  },
+  "Dates of consultation ddmmyyyyRow1_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      68.4,
+      424.32,
+      97.32
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Dates of consultation ddmmyyyyRow1_2",
+    "best_label": "Date"
+  },
+  "Reasons for consultationRow1_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      68.4,
+      551.88,
+      97.32
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Reasons for consultationRow1_2",
+    "best_label": "Name"
+  },
+  "Name of doctorRow2_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      38.64,
+      169.2,
+      67.56
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name of doctorRow2_2",
+    "best_label": "Name"
+  },
+  "Name and address of clinichospitalRow2_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      171.24,
+      38.64,
+      296.76,
+      67.56
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Name and address of clinichospitalRow2_2",
+    "best_label": "Name"
+  },
+  "Dates of consultation ddmmyyyyRow2_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      38.64,
+      424.32,
+      67.56
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Dates of consultation ddmmyyyyRow2_2",
+    "best_label": "Date"
+  },
+  "Reasons for consultationRow2_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      38.64,
+      551.88,
+      67.56
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Reasons for consultationRow2_2",
+    "best_label": "Name"
+  },
+  "Name of doctorRow1_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      723.0,
+      169.2,
+      750.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Name of doctorRow1_3",
+    "best_label": "Name"
+  },
+  "Name and address of clinichospitalRow1_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      171.24,
+      723.0,
+      296.76,
+      750.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Name and address of clinichospitalRow1_3",
+    "best_label": "Name"
+  },
+  "Dates of consultation ddmmyyyyRow1_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      723.0,
+      424.32,
+      750.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Dates of consultation ddmmyyyyRow1_3",
+    "best_label": "Date"
+  },
+  "Reasons for consultationRow1_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      723.0,
+      551.88,
+      750.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Reasons for consultationRow1_3",
+    "best_label": "Name"
+  },
+  "Name of doctorRow2_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      694.68,
+      169.2,
+      721.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Name of doctorRow2_3",
+    "best_label": "Name"
+  },
+  "Name and address of clinichospitalRow2_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      171.24,
+      694.68,
+      296.76,
+      721.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Name and address of clinichospitalRow2_3",
+    "best_label": "Name"
+  },
+  "Dates of consultation ddmmyyyyRow2_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      694.68,
+      424.32,
+      721.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Dates of consultation ddmmyyyyRow2_3",
+    "best_label": "Date"
+  },
+  "Reasons for consultationRow2_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      426.36,
+      694.68,
+      551.88,
+      721.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Reasons for consultationRow2_3",
+    "best_label": "Name"
+  },
+  "10 Is the insured covered for medical expenses by any other insurance companyies his employer or any other parties If Yes please state details below": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.92,
+      618.0,
+      492.12,
+      654.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "10 Is the insured covered for medical expenses by any other insurance companyies his employer or any other parties If Yes please state details below",
+    "best_label": "Company"
+  },
+  "Name of employer insurance company etcRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      538.56,
+      155.04,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Name of employer insurance company etcRow1",
+    "best_label": "Name"
+  },
+  "Policy numberRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      157.08,
+      538.56,
+      237.24,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Policy numberRow1",
+    "best_label": "Name"
+  },
+  "Date of issue ddmmyyyyRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      239.28,
+      538.56,
+      296.76,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Date of issue ddmmyyyyRow1",
+    "best_label": "Date"
+  },
+  "Type of planRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      538.56,
+      367.68,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Type of planRow1",
+    "best_label": "Name"
+  },
+  "Claim amount Sum assured SRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      369.72,
+      538.56,
+      432.84,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Claim amount Sum assured SRow1",
+    "best_label": "Amount"
+  },
+  "Claim notified YesNoRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      434.88,
+      538.56,
+      492.36,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Claim notified YesNoRow1",
+    "best_label": "Name"
+  },
+  "Claim paid YesNoRow1": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      494.4,
+      538.56,
+      551.88,
+      565.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Claim paid YesNoRow1",
+    "best_label": "Name"
+  },
+  "Name of employer insurance company etcRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      510.24,
+      155.04,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Name of employer insurance company etcRow2",
+    "best_label": "Name"
+  },
+  "Policy numberRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      157.08,
+      510.24,
+      237.24,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Policy numberRow2",
+    "best_label": "Name"
+  },
+  "Date of issue ddmmyyyyRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      239.28,
+      510.24,
+      296.76,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Date of issue ddmmyyyyRow2",
+    "best_label": "Date"
+  },
+  "Type of planRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      298.8,
+      510.24,
+      367.68,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Type of planRow2",
+    "best_label": "Name"
+  },
+  "Claim amount Sum assured SRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      369.72,
+      510.24,
+      432.84,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Claim amount Sum assured SRow2",
+    "best_label": "Amount"
+  },
+  "Claim notified YesNoRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      434.88,
+      510.24,
+      492.36,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Claim notified YesNoRow2",
+    "best_label": "Name"
+  },
+  "Claim paid YesNoRow2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      494.4,
+      510.24,
+      551.88,
+      537.36
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Claim paid YesNoRow2",
+    "best_label": "Name"
+  },
+  "Details": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      265.2,
+      412.44,
+      548.76,
+      426.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "statement or were not able to verify your bank",
+      "Insured   Yes  No",
+      "record with us",
+      "Details",
+      "Policyholder   Yes  No",
+      "Notes",
+      "Assignee/Trustee/Beneficiary   Yes  No Details:",
+      "Court Appointed Deputy   Yes  No",
+      "If \"Yes\", please provide details",
+      "please \nstate",
+      "TELEGRAPHIC TRANSFER",
+      "Assignee",
+      "Company",
+      "Donee",
+      "Insured   Yes  No Details: Other insurances",
+      "Amount",
+      "Beneficiary   Yes  No",
+      "please provide",
+      "payno w for more",
+      "Date",
+      "State",
+      "Policyholder   Yes  No Details:",
+      "details  on PayNow",
+      "Donee/Court Appointed Deputy   Yes  No Details:",
+      "Name",
+      "Please provide",
+      "Address",
+      "Insured   Yes  No Details"
+    ],
+    "name": "Details",
+    "best_label": "Details"
+  },
+  "Details_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      265.2,
+      394.32,
+      548.76,
+      408.0
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Details_2",
+    "best_label": "Name"
+  },
+  "Details_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      265.2,
+      376.2,
+      548.76,
+      389.88
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Details_3",
+    "best_label": "Name"
+  },
+  "Details_4": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      265.2,
+      358.2,
+      548.76,
+      371.88
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Details_4",
+    "best_label": "Name"
+  },
+  "Currency for remittance": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      393.96,
+      238.8,
+      541.56,
+      252.48
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "details  on PayNow",
+      "Currency For Remittance",
+      "Name",
+      "Name of bank Bank address Swift code Sort code",
+      "TELEGRAPHIC TRANSFER DETAILS",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Currency for remittance",
+    "best_label": "Currency For Remittance"
+  },
+  "Name of bank": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      59.04,
+      200.4,
+      182.04,
+      223.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "",
+      "State",
+      "TELEGRAPHIC TRANSFER DETAILS              Currency for remittance",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date",
+      "Name Of Bank"
+    ],
+    "name": "Name of bank",
+    "best_label": "Name Of Bank"
+  },
+  "Bank address": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      183.84,
+      200.4,
+      306.72,
+      223.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name of bank",
+      "Bank Address",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Bank address",
+    "best_label": "Bank Address"
+  },
+  "Swift code": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      308.52,
+      200.4,
+      397.44,
+      223.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "(if applicable)Intermediary bank code",
+      "(if applicable)Country of intermediary bank",
+      "Intermediary bank name",
+      "State",
+      "Name of bank Bank address",
+      "Notes",
+      "Name",
+      "Company",
+      "Swift Code",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Swift code",
+    "best_label": "Swift Code"
+  },
+  "Sort code if applicable": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      399.24,
+      200.4,
+      544.8,
+      223.8
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Sort code if applicable",
+    "best_label": "Name"
+  },
+  "Intermediary bank name if applicable": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      59.16,
+      152.16,
+      181.92,
+      180.0
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Intermediary bank name if applicable",
+    "best_label": "Name"
+  },
+  "Country of intermediary bank if applicable": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      183.96,
+      152.16,
+      306.6,
+      180.0
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Country of intermediary bank if applicable",
+    "best_label": "Name"
+  },
+  "Intermediary bank code Swift code if applicable": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      308.64,
+      152.16,
+      397.32,
+      180.0
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Intermediary bank code Swift code if applicable",
+    "best_label": "Name"
+  },
+  "Remarks any other important information required for transmittance of proceeds": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      399.36,
+      152.16,
+      544.68,
+      180.0
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Remarks any other important information required for transmittance of proceeds",
+    "best_label": "Name"
+  },
+  "Name of advisor": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      103.56,
+      724.815,
+      548.76,
+      742.215
+    ],
+    "page": 6,
+    "potential_labels": [
+      "Name Of Advisor",
+      "State",
+      "Name",
+      "Contact number of advisor",
+      "Date",
+      "City"
+    ],
+    "name": "Name of advisor",
+    "best_label": "Name Of Advisor"
+  },
+  "Contact number of advisor": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      137.4,
+      702.36,
+      548.52,
+      719.76
+    ],
+    "page": 6,
+    "potential_labels": [
+      "",
+      "State",
+      "Name of advisor:",
+      "Name of advisor",
+      "Name",
+      "Contact Number Of Advisor",
+      "Date",
+      "City"
+    ],
+    "name": "Contact number of advisor",
+    "best_label": "Contact Number Of Advisor"
+  },
+  "Full name as shown in NRICFIN cardPassport and signaturethumbprint of policyholder assignee if policy is assigned": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      394.2,
+      255.348,
+      423.0
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Full name as shown in NRICFIN cardPassport and signaturethumbprint of policyholder assignee if policy is assigned",
+    "best_label": "Name"
+  },
+  "NRICFINPassport number": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      350.16,
+      394.2,
+      455.28,
+      437.04
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "NRICFINPassport number",
+    "best_label": "Name"
+  },
+  "Date signed ddmmyyyy": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      457.8,
+      394.2,
+      551.64,
+      437.04
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Date signed ddmmyyyy",
+    "best_label": "Date"
+  },
+  "Full name as shown in NRICFIN cardPassport and signaturethumbprint of insured who is 21 years old or above if different from policyholderassignee": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      340.32,
+      254.973,
+      369.12
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Full name as shown in NRICFIN cardPassport and signaturethumbprint of insured who is 21 years old or above if different from policyholderassignee",
+    "best_label": "Name"
+  },
+  "NRICFINPassport number_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      350.16,
+      340.32,
+      455.28,
+      383.16
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "NRICFINPassport number_2",
+    "best_label": "Name"
+  },
+  "Date signed ddmmyyyy_2": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      457.8,
+      340.32,
+      551.64,
+      383.16
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Date signed ddmmyyyy_2",
+    "best_label": "Date"
+  },
+  "Full name as shown in NRICFIN cardPassport and signaturethumbprint of family member who is 21 years old or above if claim on family waiver benefit": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      286.44,
+      253.475,
+      315.24
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Full name as shown in NRICFIN cardPassport and signaturethumbprint of family member who is 21 years old or above if claim on family waiver benefit",
+    "best_label": "Name"
+  },
+  "NRICFINPassport number_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      350.16,
+      286.44,
+      455.28,
+      329.28
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "NRICFINPassport number_3",
+    "best_label": "Name"
+  },
+  "Date signed ddmmyyyy_3": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      457.8,
+      286.44,
+      551.64,
+      329.28
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Date signed ddmmyyyy_3",
+    "best_label": "Date"
+  },
+  "Full name as shown in NRICFIN cardPassport and signature of claimant who is 21 years old or above if the policyholderassigneeinsuredfamily member does not have the mental capacity or is below 21 years old": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.56,
+      232.56,
+      252.471,
+      256.68
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Full name as shown in NRICFIN cardPassport and signature of claimant who is 21 years old or above if the policyholderassigneeinsuredfamily member does not have the mental capacity or is below 21 years old",
+    "best_label": "Name"
+  },
+  "NRICFINPassport number_4": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      350.16,
+      232.56,
+      455.28,
+      275.52
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "NRICFINPassport number_4",
+    "best_label": "Name"
+  },
+  "Date signed ddmmyyyy_4": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      457.8,
+      232.56,
+      551.64,
+      275.52
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Date signed ddmmyyyy_4",
+    "best_label": "Date"
+  },
+  "Claimants relationship to policyholder": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      187.2,
+      551.88,
+      216.0
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Claimants relationship to policyholder",
+    "best_label": "Name"
+  },
+  "Email address of claimant": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      349.92,
+      141.84,
+      551.88,
+      170.64
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Claimant's relationship to policyholder",
+      "Name",
+      "Email",
+      "Email Address Of Claimant",
+      "Title",
+      "Address",
+      "Date",
+      "City",
+      "Contact number of claimant"
+    ],
+    "name": "Email address of claimant",
+    "best_label": "Email Address Of Claimant"
+  },
+  "Please indicate why policyholderassigneeinsuredfamily member is unable to sign": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      43.68,
+      96.48,
+      551.88,
+      125.28
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Please indicate why policyholderassigneeinsuredfamily member is unable to sign",
+    "best_label": "Name"
+  },
+  "Text53": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      92.5322,
+      137.699,
+      143.257,
+      159.699
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Text53",
+    "best_label": "Name"
+  },
+  "Text54": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      168.956,
+      137.325,
+      220.804,
+      159.325
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Text54",
+    "best_label": "Name"
+  },
+  "Text55": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      245.753,
+      137.699,
+      300.599,
+      159.699
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Text55",
+    "best_label": "Name"
+  },
+  "Text56": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      91.7829,
+      45.1673,
+      144.006,
+      64.9196
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Text56",
+    "best_label": "Name"
+  },
+  "Text57": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      167.457,
+      45.9166,
+      221.179,
+      64.9196
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Text57",
+    "best_label": "Name"
+  },
+  "Text58": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      245.004,
+      46.2912,
+      297.227,
+      64.5449
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Text58",
+    "best_label": "Name"
+  },
+  "Text63": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      91.7829,
+      160.177,
+      188.586,
+      175.808
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Text63",
+    "best_label": "Name"
+  },
+  "Text64": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      214.285,
+      159.428,
+      295.729,
+      176.183
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Text64",
+    "best_label": "Name"
+  },
+  "Text65": {
+    "type": "text",
+    "value": "",
+    "rect": [
+      91.7829,
+      142.57,
+      188.586,
+      157.452
+    ],
+    "page": 7,
+    "potential_labels": [
+      "Signature",
+      "Phone",
+      "Name",
+      "Email",
+      "Title",
+      "Address",
+      "Date",
+      "City"
+    ],
+    "name": "Text65",
+    "best_label": "Name"
+  },
+  "Total and Permanent Disability Terminal Illness Disability Care Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      489.36,
+      55.44,
+      497.76
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Total and Permanent Disability Terminal Illness Disability Care Benefit",
+    "best_label": "Name"
+  },
+  "Dread Disease Living Female Illness Senior Illness Juvenile Illness Special Illness Mental Illness Major Impact Critical Impact Cancer Hospice Care": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      225.72,
+      55.44,
+      234.24
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Dread Disease Living Female Illness Senior Illness Juvenile Illness Special Illness Mental Illness Major Impact Critical Impact Cancer Hospice Care",
+    "best_label": "Name"
+  },
+  "IncomeShield Family Plus Annuity Hospital  Surgical Managed Healthcare System Inpatient": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      58.08,
+      773.055,
+      66.6,
+      781.2
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "IncomeShield Family Plus Annuity Hospital  Surgical Managed Healthcare System Inpatient",
+    "best_label": "Name"
+  },
+  "Hospital Benefit Rider Hospital Cash Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      58.08,
+      603.12,
+      66.6,
+      611.64
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Hospital Benefit Rider Hospital Cash Benefit",
+    "best_label": "Name"
+  },
+  "Accident Claim Accident Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.8,
+      474.72,
+      55.32,
+      483.24
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Accident Claim Accident Benefit",
+    "best_label": "Name"
+  },
+  "Maternity 360 Lady Plus360": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.8,
+      293.28,
+      54.9454,
+      301.8
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Maternity 360 Lady Plus360",
+    "best_label": "Name"
+  },
+  "Accident Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      544.8,
+      55.44,
+      553.32
+    ],
+    "page": 2,
+    "potential_labels": [
+      "",
+      "Phone",
+      "Accident Benefit",
+      "Name",
+      "Email",
+      "Contact number of insured",
+      "Address",
+      "Date",
+      "Claim Type (Individual life policy):"
+    ],
+    "name": "Accident Benefit",
+    "best_label": "Accident Benefit"
+  },
+  "Dread Disease Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      533.76,
+      55.44,
+      542.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Accident Benefit",
+      "Name",
+      "Dread Disease Benefit",
+      "Email",
+      "Address",
+      "Date",
+      "Claim Type (Individual life policy):"
+    ],
+    "name": "Dread Disease Benefit",
+    "best_label": "Dread Disease Benefit"
+  },
+  "Hospitalisation Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      522.72,
+      55.44,
+      531.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Hospitalisation Benefit",
+      "Accident Benefit",
+      "Name",
+      "Dread Disease Benefit",
+      "Email",
+      "Address",
+      "Accident Benefit\n Dread Disease Benefit",
+      "Date",
+      "Claim Type (Individual life policy):"
+    ],
+    "name": "Hospitalisation Benefit",
+    "best_label": "Hospitalisation Benefit"
+  },
+  "Total and Permanent Disability Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      511.8,
+      55.44,
+      520.2
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Total And Permanent Disability Benefit",
+      "Phone",
+      "Hospitalisation Benefit",
+      "Accident Benefit\n Dread Disease Benefit\n Hospitalisation Benefit",
+      "Accident Benefit",
+      "Name",
+      "Dread Disease Benefit",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Total and Permanent Disability Benefit",
+    "best_label": "Total And Permanent Disability Benefit"
+  },
+  "Terminal Illness Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      500.76,
+      55.44,
+      509.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Hospitalisation Benefit",
+      "Terminal Illness Benefit",
+      "Total and Permanent Disability Benefit",
+      "Name",
+      "Dread Disease Benefit",
+      "Email",
+      "Accident Benefit\n Dread Disease Benefit\n Hospitalisation Benefit\n Total and Permanent Disability Benefit",
+      "Address",
+      "Date"
+    ],
+    "name": "Terminal Illness Benefit",
+    "best_label": "Terminal Illness Benefit"
+  },
+  "Family Waiver Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      489.72,
+      55.44,
+      498.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "If you make a claim for",
+      "Phone",
+      "Hospitalisation Benefit",
+      "declaration and authorisation\nprovided in this form relating to the insured shall be taken to refer to the family member in connection with the claim for the",
+      "Accident Benefit\n Dread Disease Benefit\n Hospitalisation Benefit\n Total and Permanent Disability Benefit\n Terminal Illness Benefit",
+      "Terminal Illness Benefit",
+      "Total and Permanent Disability Benefit",
+      "Family Waiver Benefit",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Family Waiver Benefit",
+    "best_label": "Family Waiver Benefit"
+  },
+  "Major ImpactCritical Impact Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      544.8,
+      225.48,
+      553.32
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Major ImpactCritical Impact Benefit",
+    "best_label": "Name"
+  },
+  "Cancer Hospice Care Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      533.76,
+      225.48,
+      542.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Terminal Illness Benefit",
+      "Cancer Hospice Care Benefit",
+      "Critical Impact Benefit",
+      "Total and Permanent Disability Benefit",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Cancer Hospice Care Benefit",
+    "best_label": "Cancer Hospice Care Benefit"
+  },
+  "Disability Care Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      522.72,
+      225.48,
+      531.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Critical Impact Benefit\n Cancer Hospice Care Benefit",
+      "Terminal Illness Benefit",
+      "Cancer Hospice Care Benefit",
+      "Name",
+      "Email",
+      "Date",
+      "Address",
+      "Disability Care Benefit"
+    ],
+    "name": "Disability Care Benefit",
+    "best_label": "Disability Care Benefit"
+  },
+  "Senior Illness": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      511.8,
+      225.48,
+      520.2
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Critical Impact Benefit\n Cancer Hospice Care Benefit\n Disability Care Benefit",
+      "Cancer Hospice Care Benefit",
+      "Name",
+      "Email",
+      "Date",
+      "Address",
+      "Senior Illness",
+      "Disability Care Benefit"
+    ],
+    "name": "Senior Illness",
+    "best_label": "Senior Illness"
+  },
+  "Juvenile Illness": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      500.76,
+      225.48,
+      509.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Cancer Hospice Care Benefit",
+      "Senior Illness",
+      "Name",
+      "Juvenile Illness",
+      "Email",
+      "Critical Impact Benefit\n Cancer Hospice Care Benefit\n Disability Care Benefit\n Senior Illness",
+      "Address",
+      "Date",
+      "Disability Care Benefit"
+    ],
+    "name": "Juvenile Illness",
+    "best_label": "Juvenile Illness"
+  },
+  "Special Illness": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      489.72,
+      225.48,
+      498.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Special Illness",
+      "Phone",
+      "Senior Illness",
+      "Name",
+      "Juvenile Illness",
+      "Email",
+      "Critical Impact Benefit\n Cancer Hospice Care Benefit\n Disability Care Benefit\n Senior Illness\n Juvenile Illness",
+      "Address",
+      "Date",
+      "Disability Care Benefit"
+    ],
+    "name": "Special Illness",
+    "best_label": "Special Illness"
+  },
+  "Mental Illness": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      544.8,
+      395.52,
+      553.32
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Mental Illness",
+      "Senior Illness",
+      "Name",
+      "Critical Impact Benefit\n Cancer Hospice Care Benefit\n Disability Care Benefit\n Senior Illness\n Juvenile Illness\n Special Illness",
+      "Juvenile Illness",
+      "Email",
+      "Address",
+      "Date",
+      "Disability Care Benefit"
+    ],
+    "name": "Mental Illness",
+    "best_label": "Mental Illness"
+  },
+  "Maternity 360": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      533.76,
+      395.52,
+      542.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Senior Illness",
+      "Name",
+      "Special Illness Mental Illness",
+      "Critical Impact Benefit\n Cancer Hospice Care Benefit\n Disability Care Benefit\n Senior Illness\n Juvenile Illness\n Special Illness Mental Illness",
+      "Juvenile Illness",
+      "Email",
+      "Maternity 360",
+      "Address",
+      "Date"
+    ],
+    "name": "Maternity 360",
+    "best_label": "Maternity 360"
+  },
+  "Lady Plus360 Female Illness": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      522.72,
+      395.52,
+      531.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Lady Plus360 Female Illness",
+    "best_label": "Name"
+  },
+  "Vital Function Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      511.8,
+      395.52,
+      520.2
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Vital Function Benefit",
+      "Female Illness",
+      "Phone",
+      "Special Illness Mental Illness",
+      "Name",
+      "Email",
+      "Maternity 360",
+      "Lady Plus/360, Female Illness",
+      "Address",
+      "Date"
+    ],
+    "name": "Vital Function Benefit",
+    "best_label": "Vital Function Benefit"
+  },
+  "Cancer TherapyTherapy Support Benefit": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      500.76,
+      395.52,
+      509.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Cancer TherapyTherapy Support Benefit",
+    "best_label": "Name"
+  },
+  "Others": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      489.72,
+      395.52,
+      498.24
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Vital Function Benefit",
+      "Therapy Support Benefit",
+      "Phone",
+      "Emergency overseas treatment",
+      "Cancer Therapy/Therapy Support Benefit",
+      "Others",
+      "Day surgery\n Emergency overseas treatment\n Daily cash rider",
+      "Name",
+      "Inpatient/ Day surgery",
+      "Email",
+      "Lady Plus/360, Female Illness",
+      "Daily cash rider",
+      "Address",
+      "Date"
+    ],
+    "name": "Others",
+    "best_label": "Others"
+  },
+  "Outpatient treatment": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      462.6,
+      55.44,
+      471.12
+    ],
+    "page": 2,
+    "potential_labels": [
+      "",
+      "Outpatient Treatment",
+      "Phone",
+      "Cancer Therapy/Therapy Support Benefit",
+      "Others",
+      "Name",
+      "Claim Type (IncomeShield):",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Outpatient treatment",
+    "best_label": "Outpatient Treatment"
+  },
+  "Inpatient Day surgery": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      451.56,
+      55.44,
+      460.08
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Inpatient Day surgery",
+    "best_label": "Name"
+  },
+  "Emergency overseas treatment": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      440.52,
+      55.44,
+      449.04
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Outpatient treatment",
+      "Inpatient/ Day surgery",
+      "Name",
+      "Claim Type (IncomeShield):",
+      "Day surgery",
+      "Email",
+      "Address",
+      "Date",
+      "Emergency Overseas Treatment"
+    ],
+    "name": "Emergency overseas treatment",
+    "best_label": "Emergency Overseas Treatment"
+  },
+  "Daily cash rider": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      429.6,
+      55.44,
+      438.0
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Daily Cash Rider",
+      "Phone",
+      "Outpatient treatment",
+      "Emergency overseas treatment",
+      "Day surgery\n Emergency overseas treatment",
+      "Inpatient/ Day surgery",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Daily cash rider",
+    "best_label": "Daily Cash Rider"
+  },
+  "Others_2": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      418.56,
+      55.44,
+      427.08
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Others_2",
+    "best_label": "Name"
+  },
+  "LUV": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      462.6,
+      225.48,
+      471.12
+    ],
+    "page": 2,
+    "potential_labels": [
+      "",
+      "Phone",
+      "Emergency overseas treatment",
+      "Luv",
+      "Name",
+      "Others Claim Type (Affinity schemes policy):",
+      "Email",
+      "Daily cash rider",
+      "Address",
+      "Date"
+    ],
+    "name": "LUV",
+    "best_label": "Luv"
+  },
+  "SAFRA": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      451.56,
+      225.48,
+      460.08
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "LUV",
+      "Name",
+      "Others Claim Type (Affinity schemes policy):",
+      "Email",
+      "Daily cash rider",
+      "Date",
+      "Address",
+      "Safra"
+    ],
+    "name": "SAFRA",
+    "best_label": "Safra"
+  },
+  "CEGIS": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      440.52,
+      225.48,
+      449.04
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "LUV\n SAFRA",
+      "Cegis",
+      "LUV",
+      "Name",
+      "Email",
+      "Others Claim Type (Affinity schemes policy):",
+      "Address",
+      "Date",
+      "SAFRA"
+    ],
+    "name": "CEGIS",
+    "best_label": "Cegis"
+  },
+  "HomeTeamNS": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      429.6,
+      225.48,
+      438.0
+    ],
+    "page": 2,
+    "potential_labels": [
+      "LUV\n SAFRA\n CEGIS",
+      "CEGIS",
+      "Phone",
+      "LUV",
+      "Name",
+      "Email",
+      "Address",
+      "Date",
+      "Hometeamns",
+      "SAFRA"
+    ],
+    "name": "HomeTeamNS",
+    "best_label": "Hometeamns"
+  },
+  "OCBC Protect": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      216.96,
+      418.56,
+      225.48,
+      427.08
+    ],
+    "page": 2,
+    "potential_labels": [
+      "SAFRA",
+      "CEGIS",
+      "Ocbc Protect",
+      "Phone",
+      "HomeTeamNS",
+      "Name",
+      "Email",
+      "Address",
+      "Date",
+      "LUV\n SAFRA\n CEGIS\n HomeTeamNS"
+    ],
+    "name": "OCBC Protect",
+    "best_label": "Ocbc Protect"
+  },
+  "Inpatient care": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      387.0,
+      462.6,
+      395.52,
+      471.12
+    ],
+    "page": 2,
+    "potential_labels": [
+      "",
+      "CEGIS",
+      "Phone",
+      "Inpatient Care",
+      "HomeTeamNS",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Inpatient care",
+    "best_label": "Inpatient Care"
+  },
+  "undefined_3": {
+    "type": "button",
+    "value": "/On",
+    "rect": [
+      460.8,
+      330.24,
+      469.2,
+      338.76
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_3",
+    "best_label": "Name"
+  },
+  "undefined_4": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      494.76,
+      330.24,
+      503.28,
+      338.76
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_4",
+    "best_label": "Name"
+  },
+  "undefined_5": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      313.32,
+      293.4,
+      321.84,
+      301.92
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_5",
+    "best_label": "Name"
+  },
+  "undefined_6": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      351.96,
+      293.4,
+      360.48,
+      301.92
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_6",
+    "best_label": "Name"
+  },
+  "undefined_7": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      397.68,
+      293.4,
+      406.08,
+      301.92
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_7",
+    "best_label": "Name"
+  },
+  "undefined_8": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      449.88,
+      293.4,
+      458.28,
+      301.92
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_8",
+    "best_label": "Name"
+  },
+  "undefined_9": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      498.0,
+      293.4,
+      506.4,
+      301.92
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_9",
+    "best_label": "Name"
+  },
+  "Employed": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      313.32,
+      267.24,
+      321.84,
+      275.76
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Male     Female",
+      "Phone",
+      "Employed",
+      "Self EmployedDate of birth (dd/mm/yyyy)",
+      "Employed   Unemployed\n Self",
+      "Name",
+      "Relationship to policyholder Martial status",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Employed",
+    "best_label": "Employed"
+  },
+  "Self Employed": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      313.32,
+      254.76,
+      321.84,
+      263.28
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Self Employed",
+      "Employed   Unemployed",
+      "Phone",
+      "Name",
+      "Relationship to policyholder Martial status",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "Self Employed",
+    "best_label": "Self Employed"
+  },
+  "Unemployed": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      385.32,
+      267.24,
+      393.84,
+      275.76
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Unemployed",
+      "Male     Female",
+      "Phone",
+      "Employed",
+      "if",
+      "Self EmployedDate of birth (dd/mm/yyyy)",
+      "Name",
+      "If",
+      "Email",
+      "Relationship to policyholder Martial status",
+      "Address",
+      "Date"
+    ],
+    "name": "Unemployed",
+    "best_label": "Unemployed"
+  },
+  "undefined_10": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      460.56,
+      89.16,
+      468.96,
+      97.56
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_10",
+    "best_label": "Name"
+  },
+  "undefined_11": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      494.52,
+      89.16,
+      503.04,
+      97.56
+    ],
+    "page": 2,
+    "potential_labels": [
+      "Phone",
+      "Name",
+      "Email",
+      "Address",
+      "Date"
+    ],
+    "name": "undefined_11",
+    "best_label": "Name"
+  },
+  "undefined_15": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      210.0,
+      669.36,
+      218.52,
+      677.88
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "undefined_15",
+    "best_label": "Date"
+  },
+  "undefined_16": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      258.48,
+      669.36,
+      267.0,
+      678.255
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "undefined_16",
+    "best_label": "Date"
+  },
+  "iv Have any of the insureds family members suffered from a similar or related illness": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "iv Have any of the insureds family members suffered from a similar or related illness"
+  },
+  "Waswere the injured teeth sound and natural": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "Waswere the injured teeth sound and natural"
+  },
+  "c Is the insured currently confined to any of the following Please tick accordingly": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      252.48,
+      106.32,
+      260.88,
+      114.72
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "Date",
+      "State"
+    ],
+    "name": "c Is the insured currently confined to any of the following Please tick accordingly",
+    "best_label": "Date"
+  },
+  "Bed": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      69.6,
+      106.32,
+      78.12,
+      114.72
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "State",
+      "Yes           No",
+      "Bed",
+      "Date"
+    ],
+    "name": "Bed",
+    "best_label": "Bed"
+  },
+  "House": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      123.12,
+      106.32,
+      131.64,
+      114.72
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "State",
+      "House",
+      "Date",
+      "Yes           No\n   Bed"
+    ],
+    "name": "House",
+    "best_label": "House"
+  },
+  "Hospital": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      184.8,
+      106.32,
+      193.2,
+      114.72
+    ],
+    "page": 3,
+    "potential_labels": [
+      "Description",
+      "State",
+      "Hospital",
+      "Yes           No\n   Bed                  House",
+      "Date"
+    ],
+    "name": "Hospital",
+    "best_label": "Hospital"
+  },
+  "Please specify": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "Please specify"
+  },
+  "If Yes please state the start and end date of the hospitalmedical leave": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "If Yes please state the start and end date of the hospitalmedical leave"
+  },
+  "Referral by a General PractitionerSpecialistOther hospital please delete accordingly": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      58.2,
+      584.64,
+      66.72,
+      593.16
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "Referral by a General PractitionerSpecialistOther hospital please delete accordingly",
+    "best_label": "Name"
+  },
+  "A  E department": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      58.2,
+      523.56,
+      66.72,
+      532.08
+    ],
+    "page": 4,
+    "potential_labels": [
+      "Name",
+      "Address",
+      "Date",
+      "State"
+    ],
+    "name": "A  E department",
+    "best_label": "Name"
+  },
+  "undefined_17": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "undefined_17"
+  },
+  "undefined_18": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "undefined_18"
+  },
+  "undefined_19": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "undefined_19"
+  },
+  "undefined_20": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "undefined_20"
+  },
+  "undefined_21": {
+    "type": "button",
+    "value": "/",
+    "rect": null,
+    "page": null,
+    "potential_labels": [],
+    "name": "undefined_21"
+  },
+  "undefined_22": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      502.44,
+      605.16,
+      510.96,
+      613.56
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "undefined_22",
+    "best_label": "Name"
+  },
+  "undefined_23": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      526.8,
+      605.16,
+      535.32,
+      613.56
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "undefined_23",
+    "best_label": "Name"
+  },
+  "Direct credit to your bank account 4 Please submit a copy of your bank bookstatement for account verification It must show the bank name bank": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.68,
+      309.6,
+      55.2,
+      318.12
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Direct credit to your bank account 4 Please submit a copy of your bank bookstatement for account verification It must show the bank name bank",
+    "best_label": "Name"
+  },
+  "PayNow to your NRICFIN linked account Please ensure that your PayNow is linked to your NRICFIN Visit incomecomsgpayoutpaynow for more": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.68,
+      288.72,
+      55.2,
+      297.24
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "PayNow to your NRICFIN linked account Please ensure that your PayNow is linked to your NRICFIN Visit incomecomsgpayoutpaynow for more",
+    "best_label": "Name"
+  },
+  "Telegraphic Transfer 5 6 For payee who is residing overseas only please complete the required information and submit a copy of your bank book": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.68,
+      267.96,
+      55.2,
+      276.48
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Telegraphic Transfer 5 6 For payee who is residing overseas only please complete the required information and submit a copy of your bank book",
+    "best_label": "Name"
+  },
+  "I prefer to have the communications relating to this claim copied to the preferred servicing advisor indicated below": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      46.92,
+      742.68,
+      55.44,
+      751.08
+    ],
+    "page": 6,
+    "potential_labels": [
+      "Name",
+      "State",
+      "Date",
+      "City"
+    ],
+    "name": "I prefer to have the communications relating to this claim copied to the preferred servicing advisor indicated below",
+    "best_label": "Name"
+  },
+  "Check Box1": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      473.991,
+      87.12,
+      489.831
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box1",
+    "best_label": "Name"
+  },
+  "Check Box2": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      460.758,
+      87.12,
+      476.598
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box2",
+    "best_label": "Name"
+  },
+  "Check Box3": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      444.77,
+      87.12,
+      460.61
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box3",
+    "best_label": "Name"
+  },
+  "Check Box4": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      428.662,
+      87.12,
+      444.502
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box4",
+    "best_label": "Name"
+  },
+  "Check Box5": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      414.8,
+      87.12,
+      430.64
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box5",
+    "best_label": "Name"
+  },
+  "Check Box6": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      389.701,
+      87.12,
+      405.541
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box6",
+    "best_label": "Name"
+  },
+  "Check Box7": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      374.341,
+      87.12,
+      390.181
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box7",
+    "best_label": "Name"
+  },
+  "Check Box8": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      358.232,
+      87.12,
+      374.072
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box8",
+    "best_label": "Name"
+  },
+  "Check Box9": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      343.622,
+      87.12,
+      359.462
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box9",
+    "best_label": "Name"
+  },
+  "Check Box10": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      328.637,
+      87.12,
+      344.477
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box10",
+    "best_label": "Name"
+  },
+  "Check Box11": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      314.401,
+      87.12,
+      330.241
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box11",
+    "best_label": "Name"
+  },
+  "Check Box12": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      288.178,
+      87.12,
+      304.018
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box12",
+    "best_label": "Name"
+  },
+  "Check Box13": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      273.567,
+      87.12,
+      289.407
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box13",
+    "best_label": "Name"
+  },
+  "Check Box14": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      248.842,
+      87.12,
+      264.682
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box14",
+    "best_label": "Name"
+  },
+  "Check Box15": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      200.89,
+      87.12,
+      215.29
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box15",
+    "best_label": "Name"
+  },
+  "Check Box16": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      185.531,
+      87.12,
+      199.931
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box16",
+    "best_label": "Name"
+  },
+  "Check Box17": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      170.92,
+      87.12,
+      185.32
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box17",
+    "best_label": "Name"
+  },
+  "Check Box18": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      155.561,
+      87.12,
+      169.961
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box18",
+    "best_label": "Name"
+  },
+  "Check Box19": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      141.325,
+      87.12,
+      155.725
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box19",
+    "best_label": "Name"
+  },
+  "Check Box20": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      116.225,
+      87.12,
+      130.625
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box20",
+    "best_label": "Name"
+  },
+  "Check Box21": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      90.7506,
+      87.12,
+      105.151
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box21",
+    "best_label": "Name"
+  },
+  "Check Box22": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      75.391,
+      87.12,
+      89.791
+    ],
+    "page": 0,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Email",
+      "Notes",
+      "Date",
+      "City"
+    ],
+    "name": "Check Box22",
+    "best_label": "Name"
+  },
+  "Check Box23": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      757.956,
+      86.4,
+      773.076
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box23",
+    "best_label": "Name"
+  },
+  "Check Box24": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      741.847,
+      86.4,
+      756.967
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box24",
+    "best_label": "Name"
+  },
+  "Check Box25": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      725.862,
+      86.4,
+      740.982
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box25",
+    "best_label": "Name"
+  },
+  "Check Box26": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      711.128,
+      86.4,
+      726.248
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box26",
+    "best_label": "Name"
+  },
+  "Check Box27": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      695.019,
+      86.4,
+      710.139
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box27",
+    "best_label": "Name"
+  },
+  "Check Box28": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      679.66,
+      86.4,
+      694.78
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box28",
+    "best_label": "Name"
+  },
+  "Check Box29": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      663.551,
+      86.4,
+      678.671
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box29",
+    "best_label": "Name"
+  },
+  "Check Box30": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      647.817,
+      86.4,
+      662.937
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box30",
+    "best_label": "Name"
+  },
+  "Check Box31": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      587.877,
+      86.4,
+      602.277
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box31",
+    "best_label": "Name"
+  },
+  "Check Box32": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      572.768,
+      86.4,
+      587.168
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box32",
+    "best_label": "Name"
+  },
+  "Check Box33": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      556.783,
+      86.4,
+      571.183
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box33",
+    "best_label": "Name"
+  },
+  "Check Box34": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      540.674,
+      86.4,
+      555.074
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box34",
+    "best_label": "Name"
+  },
+  "Check Box35": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      525.315,
+      86.4,
+      539.715
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box35",
+    "best_label": "Name"
+  },
+  "Check Box36": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      509.955,
+      86.4,
+      524.355
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box36",
+    "best_label": "Name"
+  },
+  "Check Box37": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      459.755,
+      86.4,
+      474.875
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box37",
+    "best_label": "Name"
+  },
+  "Check Box38": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      444.77,
+      86.4,
+      459.89
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box38",
+    "best_label": "Name"
+  },
+  "Check Box39": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      429.036,
+      86.4,
+      444.156
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box39",
+    "best_label": "Name"
+  },
+  "Check Box40": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      413.677,
+      86.4,
+      428.797
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box40",
+    "best_label": "Name"
+  },
+  "Check Box41": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      399.066,
+      86.4,
+      414.186
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box41",
+    "best_label": "Name"
+  },
+  "Check Box42": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      383.332,
+      86.4,
+      398.452
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box42",
+    "best_label": "Name"
+  },
+  "Check Box43": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      368.347,
+      86.4,
+      383.467
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box43",
+    "best_label": "Name"
+  },
+  "Check Box44": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      352.613,
+      86.4,
+      367.733
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box44",
+    "best_label": "Name"
+  },
+  "Check Box45": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      329.386,
+      86.4,
+      344.506
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box45",
+    "best_label": "Name"
+  },
+  "Check Box46": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      277.688,
+      86.4,
+      292.808
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box46",
+    "best_label": "Name"
+  },
+  "Check Box47": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      263.827,
+      86.4,
+      278.947
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box47",
+    "best_label": "Name"
+  },
+  "Check Box48": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      248.093,
+      86.4,
+      263.213
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box48",
+    "best_label": "Name"
+  },
+  "Check Box49": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      233.482,
+      86.4,
+      248.602
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box49",
+    "best_label": "Name"
+  },
+  "Check Box50": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      216.624,
+      86.4,
+      231.744
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box50",
+    "best_label": "Name"
+  },
+  "Check Box51": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      202.014,
+      86.4,
+      217.134
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box51",
+    "best_label": "Name"
+  },
+  "Check Box52": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      57.6,
+      186.654,
+      86.4,
+      201.774
+    ],
+    "page": 1,
+    "potential_labels": [
+      "Name",
+      "Date",
+      "State"
+    ],
+    "name": "Check Box52",
+    "best_label": "Name"
+  },
+  "Check Box53": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      165.584,
+      411.302,
+      174.224,
+      419.942
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box53",
+    "best_label": "Name"
+  },
+  "Check Box54": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      202.3,
+      411.683,
+      210.94,
+      420.323
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box54",
+    "best_label": "Name"
+  },
+  "Check Box55": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      165.962,
+      393.831,
+      174.602,
+      402.471
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box55",
+    "best_label": "Name"
+  },
+  "Check Box56": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      203.049,
+      393.453,
+      211.689,
+      402.093
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box56",
+    "best_label": "Name"
+  },
+  "Check Box57": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      165.463,
+      374.846,
+      174.103,
+      383.486
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box57",
+    "best_label": "Name"
+  },
+  "Check Box58": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      202.551,
+      375.096,
+      211.191,
+      383.736
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box58",
+    "best_label": "Name"
+  },
+  "Check Box59": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      165.841,
+      356.864,
+      174.481,
+      365.504
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box59",
+    "best_label": "Name"
+  },
+  "Check Box60": {
+    "type": "button",
+    "value": "/Off",
+    "rect": [
+      202.928,
+      357.489,
+      211.568,
+      366.129
+    ],
+    "page": 5,
+    "potential_labels": [
+      "State",
+      "Name",
+      "Company",
+      "Notes",
+      "Address",
+      "Amount",
+      "Date"
+    ],
+    "name": "Check Box60",
+    "best_label": "Name"
+  }
+}
