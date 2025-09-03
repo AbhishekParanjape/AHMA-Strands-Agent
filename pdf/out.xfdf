@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+  <fields>
+    <field name="Policy numbers"><value>AB1234567; CD7654321</value></field><field name="Plan type"><value>IncomeShield</value></field><field name="Claim number"><value>CLM-2025-0001</value></field><field name="Full name of insured as shown in NRICFIN cardPassportBirth Certificate"><value>TAN JIA WEI</value></field><field name="NRICFINPassportBirth Certificate number of insured"><value>S1234567D</value></field><field name="Relationship to policyholder"><value>Self</value></field><field name="Occupation If unemployed please indicate last occupation"><value>Software Engineer</value></field><field name="Date of birth ddmmyyyy"><value>05/08/1999</value></field><field name="Name and address of employer or last employer if unemployed"><value>Fictional Pte Ltd, 123 Shenton Way, Singapore</value></field><field name="From"><value>01/07/2023</value></field><field name="To"><value>01/09/2025</value></field><field name="Duties performed at work"><value>Full-stack development, on-call rotations</value></field><field name="Email address of insured"><value>jiawei@example.com</value></field>
+  </fields>
+  <f href=""/>
+</xfdf>
