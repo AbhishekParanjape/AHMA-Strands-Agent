@@ -47,5 +47,8 @@ def create_event(summary, start_time, end_time, location=None, description=None,
     if recurrence:
         event['recurrence'] = [recurrence]
 
-    created_event = service.events().insert(calendarId='primary', body=event).execute()
-    return created_event.get('htmlLink')
+    try:
+        event = service.events().insert(calendarId="primary", body=event_body).execute()
+        print("✅ Event created:", event.get("htmlLink"))
+    except Exception as e:
+        print("❌ Failed to create event:", e)
