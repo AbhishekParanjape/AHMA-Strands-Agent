@@ -84,7 +84,7 @@ response3 = router_agent(user_message3)
 print("user 3:", response3)
 """
 
-user_message3 = "Collect the medicine from the doctors at 9am 30 sept 2025, in singapore."
+# user_message3 = "Collect the medicine from the doctors at 9am 30 sept 2025, in singapore."
 
 while True:
     user_input = input("\nYou: ")
@@ -93,4 +93,3 @@ while True:
         break
 
     response3 = router_agent(user_input)
-    print("Assistant:", response3)

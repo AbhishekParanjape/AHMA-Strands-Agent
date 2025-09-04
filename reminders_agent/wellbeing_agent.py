@@ -95,7 +95,7 @@ def create_wellbeing_agent():
         - Provide stress-management, self-care, and mental health tips for caregivers. 
         - If needed, suggest local or online resources, support groups, respite care, or hotlines.
         - If the caregiver mentions needing a block of rest time, personal time or self-care, 
-        or clearly wants professional help (e.g. therapy session, support group), use the `create_calendar_event` tool. 
+        or clearly wants professional help (e.g. therapy session, support group), delegate to the Appointments Agent. 
         - If they want to track tasks (e.g. "meditation", "exercise"), use the `create_todoist_task` tool. 
         Always explain what you’re doing, and confirm before creating an appointment.
         """,
@@ -107,13 +107,13 @@ def create_wellbeing_agent():
 def test_agent():
     agent = create_wellbeing_agent()
     message = """
-    I am feeling quite stressed now, just spent 4 hours taking care of my mom.
+    I am feeling quite stressed now, just spent 4 hours taking care of my mom. I want to call a helpline later in the afternoon, maybe 4pm.
     """
 
     agent(message)
 
     while True:
-        user_input = input("\nYou: ")
+        user_input = input("\n\nYou: ")
         if user_input.lower() in ["quit", "exit", "q"]:
             print("👋 Goodbye!")
             break

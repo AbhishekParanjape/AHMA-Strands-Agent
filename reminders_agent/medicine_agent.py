@@ -77,6 +77,5 @@ def test_med_agent():
             break
 
         response = agent(user_input)
-        print("Assistant:", response)
 
-test_med_agent()
+# test_med_agent()
