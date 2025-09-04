@@ -4,7 +4,7 @@ def create_medicine_agent():
     import boto3
     import os 
 
-    from .google_event import create_event
+    from reminders_agent.google_event import create_event
 
     # Bedrock client (credentials already set)
     bedrock = boto3.client(
@@ -18,7 +18,7 @@ def create_medicine_agent():
     def create_calendar_event(
         summary: str, start_time: str, end_time: str, location: str = None, description: str = None, recurrence: str = None) -> str:
         """
-        Create a Google Calendar event, including support for daily recurring medicine reminders.
+        Create a Google Calendar event, for repeating medicine reminders.
         
         Args:
             summary: Title of the event, including medicine name.
@@ -79,4 +79,4 @@ def test_med_agent():
         response = agent(user_input)
         print("Assistant:", response)
 
-# test_med_agent()
+test_med_agent()

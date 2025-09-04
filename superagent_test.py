@@ -4,6 +4,7 @@ import boto3
 from reminders_agent.medicine_agent import create_medicine_agent
 from reminders_agent.appointments_agent import create_appointments_agent
 from tracking_agent.todo_agent import create_todo_agent
+from reminders_agent.wellbeing_agent import create_wellbeing_agent
 
 bedrock = boto3.client(
     service_name="bedrock-runtime",
@@ -44,6 +45,15 @@ def todo_agent(query: str) -> str:
     return agent(query)
 
 
+@tool
+def wellbeing_agent(query: str) -> str:
+    """
+    Handle caregiver wellbeing requests. 
+    Can provide self-care advice, suggest resources, and schedule wellbeing activities. 
+    """
+    agent = create_wellbeing_agent()
+    return wellbeing_agent(query)
+
 # Router agent
 router_agent = Agent(
     name="RouterAgent",
@@ -53,10 +63,11 @@ router_agent = Agent(
         "- Medicine spcific details, like name and frequency (send to MedicineAgent)\n"
         "- Calendar Appointments (send to AppointmentAgent)\n"
         "- General to-do tasks, usually including verbs (send to TodoistAgent)\n"
+        "- Caregiver wellbeing (self-care, stress, resources) (send to WellbeingAgent)\n"
         "- If unsure, confirm with the user on which function they would like to use."
         "Forward the request to the correct agent and return their response."
     ),
-    tools=[medicine_agent, appointment_agent, todo_agent]
+    tools=[medicine_agent, appointment_agent, todo_agent, wellbeing_agent]
 )
 
 # ---------- Example usage ----------
