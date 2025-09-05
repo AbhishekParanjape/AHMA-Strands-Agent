@@ -3,6 +3,7 @@ import re
 from typing import Dict, List, Optional
 import argparse, json, sys
 
+
 def extract_field_names_comprehensive(pdf_path: str) -> Dict[str, Dict]:
     """
     Extract AcroForm field names using multiple methods to get the most accurate names.
@@ -29,7 +30,10 @@ def extract_field_names_comprehensive(pdf_path: str) -> Dict[str, Dict]:
         all_fields.update(annotation_fields)
         
         # Clean and enhance field names
+
         enhanced_fields = enhance_field_names(all_fields)
+        # After merging all methods:
+
         
         return enhanced_fields
 
@@ -248,6 +252,8 @@ def find_field_page_number(field_obj, pdf_reader: PyPDF2.PdfReader) -> Optional[
         
     except Exception:
         return None
+    
+
 
 def enhance_field_names(fields: Dict[str, Dict]) -> Dict[str, Dict]:
     """Clean and enhance field names for better usability."""
@@ -266,6 +272,17 @@ def enhance_field_names(fields: Dict[str, Dict]) -> Dict[str, Dict]:
         enhanced_fields[field_name] = enhanced_info
     
     return enhanced_fields
+
+# Clean out generic/noisy field names like "Check Box##" or "Undefined_##"
+def _filter_noise_fields(fields: Dict[str, Dict]) -> Dict[str, Dict]:
+    out = {}
+    for k, v in fields.items():
+        raw = v.get('raw_name') or k
+        if not _is_noise_field(raw) and not _is_noise_field(k):
+            out[k] = v
+    return out
+
+
 
 def clean_field_name(field_name: str) -> str:
     """Clean field name by removing common prefixes/suffixes and artifacts."""
@@ -369,6 +386,8 @@ if __name__ == "__main__":
     try:
         fields_with_labels = extract_field_names_comprehensive(args.pdf)
         print_field_names_analysis(fields_with_labels)
+
+        
         
         # Convert to JSON for your pipeline
         

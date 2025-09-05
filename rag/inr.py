@@ -91,7 +91,7 @@ converse_request = {
         }
     ],
     "inferenceConfig": {
-        "temperature": 0.4,
+        "temperature": 0.3,
         "topP": 0.9,
         "maxTokens": 500
     }
