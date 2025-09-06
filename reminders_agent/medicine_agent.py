@@ -4,7 +4,7 @@ def create_medicine_agent():
     import boto3
     import os 
 
-    from reminders_agent.google_event import create_event
+    from .google_event import create_event
 
     # Bedrock client (credentials already set)
     bedrock = boto3.client(

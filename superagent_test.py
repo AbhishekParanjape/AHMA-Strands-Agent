@@ -55,7 +55,7 @@ def wellbeing_agent(query: str) -> str:
     Can provide self-care advice, suggest resources, and schedule wellbeing activities. 
     """
     agent = create_wellbeing_agent()
-    return wellbeing_agent(query)
+    return agent(query)
 
 # PDF Processing Tools
 @tool
@@ -251,10 +251,11 @@ print("user 3:", response3)
 
 # user_message3 = "Collect the medicine from the doctors at 9am 30 sept 2025, in singapore."
 
-while True:
-    user_input = input("\nYou: ")
-    if user_input.lower() in ["quit", "exit", "q"]:
-        print("👋 Goodbye!")
-        break
+if __name__ == "__main__":
+    while True:
+        user_input = input("\nYou: ")
+        if user_input.lower() in ["quit", "exit", "q"]:
+            print("👋 Goodbye!")
+            break
 
-    response3 = router_agent(user_input)
+        response3 = router_agent(user_input)

@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMA Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: white;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .main-chat {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .widget {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+        }
+        .widget h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #800000;
+            padding-bottom: 5px;
+        }
+        .chat-container {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            background-color: #fafafa;
+        }
+        .chat-input {
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .chat-input button {
+            padding: 10px 20px;
+            background-color: #800000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .chat-input button:hover {
+            background-color: #600000;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: 20%;
+        }
+        .assistant-message {
+            background-color: #f3e5f5;
+            margin-right: 20%;
+        }
+        .event-item, .task-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .event-item:last-child, .task-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* CBC Logo */
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #800000;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+            </div>
+            
+            <div class="widget">
+                <h3>Google Calendar</h3>
+                <div id="calendar-events">
+                    <p>Loading events...</p>
+                </div>
+            </div>
+            
+            <div class="widget">
+                <h3>Todoist Tasks</h3>
+                <div id="todoist-tasks">
+                    <p>Loading tasks...</p>
+                </div>
+            </div>
+            
+            <div class="widget">
+                <h3>Insurance Chatbot</h3>
+                <div id="insurance-chat">
+                    <p>Insurance assistance available</p>
+                    <button onclick="startInsuranceChat()">Start Chat</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-chat">
+            <h2 style="color: #800000;">AHMA - AI Health Management Assistant</h2>
+            <div class="chat-container" id="chat-container">
+                <div class="message assistant-message">
+                    Hello! I'm AHMA, your AI Health Management Assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load initial data
+        loadCalendarEvents();
+        loadTodoistTasks();
+        
+        function loadCalendarEvents() {
+            fetch('/api/google-calendar/events?max_results=5')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('calendar-events');
+                    if (data.events && data.events.length > 0) {
+                        container.innerHTML = data.events.map(event => 
+                            `<div class="event-item">
+                                <strong>${event.summary}</strong><br>
+                                <small>${new Date(event.start).toLocaleString()}</small>
+                            </div>`
+                        ).join('');
+                    } else {
+                        container.innerHTML = '<p>No upcoming events</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading calendar events:', error);
+                    document.getElementById('calendar-events').innerHTML = '<p>Error loading events</p>';
+                });
+        }
+        
+        function loadTodoistTasks() {
+            fetch('/api/todoist/tasks?limit=10')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('todoist-tasks');
+                    if (data.tasks && data.tasks.length > 0) {
+                        const incompleteTasks = data.tasks.filter(task => !task.completed);
+                        if (incompleteTasks.length > 0) {
+                            container.innerHTML = incompleteTasks.map(task => 
+                                `<div class="task-item">
+                                    <strong>${task.content}</strong><br>
+                                    <small>Priority: ${task.priority}</small>
+                                </div>`
+                            ).join('');
+                        } else {
+                            container.innerHTML = '<p>All tasks completed!</p>';
+                        }
+                    } else {
+                        container.innerHTML = '<p>No tasks found</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading Todoist tasks:', error);
+                    document.getElementById('todoist-tasks').innerHTML = '<p>Error loading tasks</p>';
+                });
+        }
+        
+        function sendMessage() {
+            const input = document.getElementById('message-input');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message to chat
+            addMessage(message, 'user');
+            input.value = '';
+            
+            // Send to backend
+            fetch('/api/ahma/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.response) {
+                    addMessage(data.response, 'assistant');
+                } else if (data.error) {
+                    addMessage('Sorry, I encountered an error: ' + data.error, 'assistant');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                addMessage('Sorry, I encountered an error. Please try again.', 'assistant');
+            });
+        }
+        
+        function addMessage(message, sender) {
+            const container = document.getElementById('chat-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            messageDiv.textContent = message;
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+        
+        function startInsuranceChat() {
+            addMessage('Insurance assistance: How can I help with your insurance claims?', 'assistant');
+        }
+        
+        // Refresh data every 5 minutes
+        setInterval(() => {
+            loadCalendarEvents();
+            loadTodoistTasks();
+        }, 300000);
+    </script>
+</body>
+</html>

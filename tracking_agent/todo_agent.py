@@ -1,7 +1,7 @@
 def create_todo_agent():
     from strands import Agent, tool
     import boto3
-    from todoist_task import add_task_to_todoist
+    from .todoist_task import add_task_to_todoist
 
     # Bedrock client (credentials already set)
     bedrock = boto3.client(
