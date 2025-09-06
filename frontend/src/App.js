@@ -38,6 +38,14 @@ function App() {
         timestamp: new Date()
       }
     ]);
+
+    // Set up periodic refresh for tasks (every 30 seconds)
+    const taskRefreshInterval = setInterval(() => {
+      loadTodoistTasks();
+    }, 30000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(taskRefreshInterval);
   }, []);
 
   // Load Google Calendar Events
@@ -357,11 +365,19 @@ function App() {
           <div className="widget-header">
             <i className="fas fa-tasks"></i>
             <h3>Todoist Tasks</h3>
+            <button 
+              className="refresh-button"
+              onClick={loadTodoistTasks}
+              title="Refresh tasks"
+            >
+              <i className="fas fa-sync-alt"></i>
+            </button>
           </div>
           <div className="todoist-tasks">
             {todoistTasks.filter(task => !task.completed).length > 0 ? (
               todoistTasks
                 .filter(task => !task.completed)
+                .sort((a, b) => new Date(b.created_at) - new Date(a.created_at)) // Sort by creation date, newest first
                 .map(task => (
                   <div key={task.id} className="task-item slide-in">
                     <i 
