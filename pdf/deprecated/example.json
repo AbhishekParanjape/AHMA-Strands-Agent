@@ -1,0 +1,2136 @@
+{
+  "Total and Permanent Disability Terminal Illness Disability Care Benefit": {
+    "value": "On",
+    "rect": [
+      46.92,
+      489.36,
+      55.44,
+      497.76
+    ],
+    "page": 0,
+    "extraction_method": "annotation_widget"
+  },
+  "Dread Disease Living Female Illness Senior Illness Juvenile Illness Special Illness Mental Illness Major Impact Critical Impact Cancer Hospice Care": {
+    "value": "On",
+    "rect": [
+      46.92,
+      225.72,
+      55.44,
+      234.24
+    ],
+    "page": 0,
+    "extraction_method": "annotation_widget"
+  },
+  "IncomeShield Family Plus Annuity Hospital  Surgical Managed Healthcare System Inpatient": {
+    "value": "/On",
+    "rect": [
+      58.08,
+      773.055,
+      66.6,
+      781.2
+    ],
+    "page": 1,
+    "extraction_method": "annotation_widget"
+  },
+  "Hospital Benefit Rider Hospital Cash Benefit": {
+    "value": "/On",
+    "rect": [
+      58.08,
+      603.12,
+      66.6,
+      611.64
+    ],
+    "page": 1,
+    "extraction_method": "annotation_widget"
+  },
+  "Accident Claim Accident Benefit": {
+    "value": "/On",
+    "rect": [
+      46.8,
+      474.72,
+      55.32,
+      483.24
+    ],
+    "page": 1,
+    "extraction_method": "annotation_widget"
+  },
+  "Maternity 360 Lady Plus360": {
+    "value": "/On",
+    "rect": [
+      46.8,
+      293.28,
+      54.9454,
+      301.8
+    ],
+    "page": 1,
+    "extraction_method": "annotation_widget"
+  },
+  "Accident Benefit": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      544.8,
+      55.44,
+      553.32
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Dread Disease Benefit": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      533.76,
+      55.44,
+      542.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Hospitalisation Benefit": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      522.72,
+      55.44,
+      531.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Total and Permanent Disability Benefit": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      511.8,
+      55.44,
+      520.2
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Terminal Illness Benefit": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      500.76,
+      55.44,
+      509.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Family Waiver Benefit": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      489.72,
+      55.44,
+      498.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Major ImpactCritical Impact Benefit": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      544.8,
+      225.48,
+      553.32
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Cancer Hospice Care Benefit": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      533.76,
+      225.48,
+      542.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Disability Care Benefit": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      522.72,
+      225.48,
+      531.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Senior Illness": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      511.8,
+      225.48,
+      520.2
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Juvenile Illness": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      500.76,
+      225.48,
+      509.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Special Illness": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      489.72,
+      225.48,
+      498.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Mental Illness": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      544.8,
+      395.52,
+      553.32
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Maternity 360": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      533.76,
+      395.52,
+      542.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Lady Plus360 Female Illness": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      522.72,
+      395.52,
+      531.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Vital Function Benefit": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      511.8,
+      395.52,
+      520.2
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Cancer TherapyTherapy Support Benefit": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      500.76,
+      395.52,
+      509.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Others": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      489.72,
+      395.52,
+      498.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Outpatient treatment": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      462.6,
+      55.44,
+      471.12
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Inpatient Day surgery": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      451.56,
+      55.44,
+      460.08
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Emergency overseas treatment": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      440.52,
+      55.44,
+      449.04
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Daily cash rider": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      429.6,
+      55.44,
+      438.0
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Others_2": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      418.56,
+      55.44,
+      427.08
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "LUV": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      462.6,
+      225.48,
+      471.12
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "SAFRA": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      451.56,
+      225.48,
+      460.08
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "CEGIS": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      440.52,
+      225.48,
+      449.04
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "HomeTeamNS": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      429.6,
+      225.48,
+      438.0
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "OCBC Protect": {
+    "value": "/On",
+    "rect": [
+      216.96,
+      418.56,
+      225.48,
+      427.08
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Inpatient care": {
+    "value": "/On",
+    "rect": [
+      387.0,
+      462.6,
+      395.52,
+      471.12
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Policy numbers": {
+    "value": "",
+    "rect": [
+      43.68,
+      373.92,
+      211.8,
+      399.96
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Plan type": {
+    "value": "",
+    "rect": [
+      213.84,
+      373.92,
+      381.84,
+      399.96
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim number": {
+    "value": "",
+    "rect": [
+      383.88,
+      373.92,
+      551.88,
+      399.96
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Full name of insured as shown in NRICFIN cardPassportBirth Certificate": {
+    "value": "t003020j",
+    "rect": [
+      43.68,
+      316.92,
+      308.16,
+      343.08
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "NRICFINPassportBirth Certificate number of insured": {
+    "value": "wrgijrij",
+    "rect": [
+      309.84,
+      316.92,
+      455.88,
+      333.84
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Relationship to policyholder": {
+    "value": "hi",
+    "rect": [
+      43.68,
+      280.08,
+      308.16,
+      306.24
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Occupation If unemployed please indicate last occupation": {
+    "value": "ji",
+    "rect": [
+      43.68,
+      243.24,
+      308.16,
+      269.4
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Employed": {
+    "value": "On",
+    "rect": [
+      313.32,
+      267.24,
+      321.84,
+      275.76
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Self Employed": {
+    "value": "/On",
+    "rect": [
+      313.32,
+      254.76,
+      321.84,
+      263.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Unemployed": {
+    "value": "/On",
+    "rect": [
+      385.32,
+      267.24,
+      393.84,
+      275.76
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Date of birth ddmmyyyy": {
+    "value": "",
+    "rect": [
+      457.56,
+      243.24,
+      551.88,
+      269.4
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of employer or last employer if unemployed": {
+    "value": "",
+    "rect": [
+      43.68,
+      206.4,
+      308.16,
+      232.56
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "From": {
+    "value": "",
+    "rect": [
+      332.16,
+      215.04,
+      400.2,
+      224.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "To": {
+    "value": "",
+    "rect": [
+      416.64,
+      215.04,
+      484.68,
+      224.28
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Duties performed at work": {
+    "value": "",
+    "rect": [
+      43.68,
+      169.56,
+      551.88,
+      195.72
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Email address of insured": {
+    "value": "",
+    "rect": [
+      310.2,
+      132.72,
+      551.88,
+      158.88
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "Full name as shown in NRICFIN cardPassport of policyholderassignee if policy is assigned": {
+    "value": "",
+    "rect": [
+      43.08,
+      75.72,
+      308.28,
+      92.64
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "NRICFINPassport number of policyholder assignee if policy is assigned": {
+    "value": "",
+    "rect": [
+      309.6,
+      75.72,
+      455.64,
+      92.64
+    ],
+    "page": 2,
+    "extraction_method": "annotation_widget"
+  },
+  "i Diagnosis": {
+    "value": "",
+    "rect": [
+      112.08,
+      633.855,
+      548.76,
+      652.935
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "ii Date symptoms started ddmmyyyy": {
+    "value": "",
+    "rect": [
+      206.76,
+      612.48,
+      320.28,
+      631.56
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "iii Describe in detail all symptoms and nature of medical conditiondisability suffered": {
+    "value": "",
+    "rect": [
+      43.92,
+      542.64,
+      551.64,
+      594.0
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "iv Have any of the insureds family members suffered from a similar or related illness": {
+    "value": null,
+    "rect": [
+      369.0,
+      529.68,
+      377.4,
+      538.2
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Relationship of family memberRow1": {
+    "value": "",
+    "rect": [
+      81.96,
+      468.6,
+      190.8,
+      493.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Nature of illnessRow1": {
+    "value": "",
+    "rect": [
+      192.6,
+      468.6,
+      281.4,
+      493.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Date of diagnosisRow1": {
+    "value": "",
+    "rect": [
+      283.2,
+      468.6,
+      346.68,
+      493.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Age diagnosedRow1": {
+    "value": "",
+    "rect": [
+      348.48,
+      468.6,
+      403.32,
+      493.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Treatment detailsRow1": {
+    "value": "",
+    "rect": [
+      405.12,
+      468.6,
+      547.92,
+      493.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Relationship of family memberRow2": {
+    "value": "",
+    "rect": [
+      81.96,
+      443.16,
+      190.8,
+      467.52
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Nature of illnessRow2": {
+    "value": "",
+    "rect": [
+      192.6,
+      443.16,
+      281.4,
+      467.52
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Date of diagnosisRow2": {
+    "value": "",
+    "rect": [
+      283.2,
+      443.16,
+      346.68,
+      467.52
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Age diagnosedRow2": {
+    "value": "",
+    "rect": [
+      348.48,
+      443.16,
+      403.32,
+      467.52
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Treatment detailsRow2": {
+    "value": "",
+    "rect": [
+      405.12,
+      443.16,
+      547.92,
+      467.52
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Relationship of family memberRow3": {
+    "value": "",
+    "rect": [
+      81.96,
+      417.6,
+      190.8,
+      442.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Nature of illnessRow3": {
+    "value": "",
+    "rect": [
+      192.6,
+      417.6,
+      281.4,
+      442.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Date of diagnosisRow3": {
+    "value": "",
+    "rect": [
+      283.2,
+      417.6,
+      346.68,
+      442.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Age diagnosedRow3": {
+    "value": "",
+    "rect": [
+      348.48,
+      417.6,
+      403.32,
+      442.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Treatment detailsRow3": {
+    "value": "",
+    "rect": [
+      405.12,
+      417.6,
+      547.92,
+      442.08
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "i Date of accident ddmmyyyy": {
+    "value": "",
+    "rect": [
+      184.32,
+      381.12,
+      297.84,
+      400.2
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "ii Time of accident": {
+    "value": "",
+    "rect": [
+      381.72,
+      381.12,
+      495.24,
+      400.2
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "iii Place of accident": {
+    "value": "",
+    "rect": [
+      137.64,
+      360.24,
+      548.76,
+      379.32
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "iv Detailed description of nature of injuriesdisability suffered": {
+    "value": "",
+    "rect": [
+      43.92,
+      279.0,
+      551.64,
+      341.76
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "v Detailed description of accident Please enclose a copy of the police report if any": {
+    "value": "",
+    "rect": [
+      43.92,
+      205.32,
+      551.64,
+      267.96
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "vi If you are claiming for accidental injuries resulting in inpatient dental treatment please advise which toothteeth were injured Waswere the injured teeth sound and natural Yes No": {
+    "value": "",
+    "rect": [
+      43.92,
+      131.64,
+      551.64,
+      180.72
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Waswere the injured teeth sound and natural": {
+    "value": null,
+    "rect": [
+      253.32,
+      181.8,
+      261.84,
+      190.32
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "c Is the insured currently confined to any of the following Please tick accordingly": {
+    "value": "/On",
+    "rect": [
+      252.48,
+      106.32,
+      260.88,
+      114.72
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Bed": {
+    "value": "/On",
+    "rect": [
+      69.6,
+      106.32,
+      78.12,
+      114.72
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "House": {
+    "value": "/On",
+    "rect": [
+      123.12,
+      106.32,
+      131.64,
+      114.72
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Hospital": {
+    "value": "/On",
+    "rect": [
+      184.8,
+      106.32,
+      193.2,
+      114.72
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Others_3": {
+    "value": "",
+    "rect": [
+      286.44,
+      107.28,
+      357.36,
+      117.84
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Please specify": {
+    "value": null,
+    "rect": [
+      347.4,
+      118.68,
+      355.92,
+      127.2
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Start Date ddmmyyyy": {
+    "value": "",
+    "rect": [
+      152.64,
+      65.4,
+      266.16,
+      84.48
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "End Date ddmmyyyy": {
+    "value": "",
+    "rect": [
+      363.96,
+      65.4,
+      477.48,
+      84.48
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "If not confined please briefly describe insureds daily activities": {
+    "value": "",
+    "rect": [
+      273.96,
+      44.4,
+      495.12,
+      63.48
+    ],
+    "page": 3,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of hospitalRow1": {
+    "value": "",
+    "rect": [
+      81.96,
+      711.48,
+      321.12,
+      735.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "From ddmmyyyyRow1": {
+    "value": "",
+    "rect": [
+      322.92,
+      711.48,
+      434.52,
+      735.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "To ddmmyyyyRow1": {
+    "value": "",
+    "rect": [
+      436.32,
+      711.48,
+      547.92,
+      735.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of hospitalRow2": {
+    "value": "",
+    "rect": [
+      81.96,
+      685.92,
+      321.12,
+      710.4
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "From ddmmyyyyRow2": {
+    "value": "",
+    "rect": [
+      322.92,
+      685.92,
+      434.52,
+      710.4
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "To ddmmyyyyRow2": {
+    "value": "",
+    "rect": [
+      436.32,
+      685.92,
+      547.92,
+      710.4
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of hospitalRow3": {
+    "value": "",
+    "rect": [
+      81.96,
+      660.36,
+      321.12,
+      684.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "From ddmmyyyyRow3": {
+    "value": "",
+    "rect": [
+      322.92,
+      660.36,
+      434.52,
+      684.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "To ddmmyyyyRow3": {
+    "value": "",
+    "rect": [
+      436.32,
+      660.36,
+      547.92,
+      684.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "If Yes please state the start and end date of the hospitalmedical leave": {
+    "value": null,
+    "rect": [
+      264.6,
+      644.28,
+      273.12,
+      652.8
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Start Date ddmmyyyy_2": {
+    "value": "",
+    "rect": [
+      165.72,
+      614.64,
+      279.24,
+      630.96
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "End Date ddmmyyyy_2": {
+    "value": "",
+    "rect": [
+      368.04,
+      614.64,
+      481.56,
+      630.96
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Referral by a General PractitionerSpecialistOther hospital please delete accordingly": {
+    "value": "/On",
+    "rect": [
+      58.2,
+      584.64,
+      66.72,
+      593.16
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "A  E department": {
+    "value": "/On",
+    "rect": [
+      58.2,
+      523.56,
+      66.72,
+      532.08
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Please provide the name and address of referring doctorhospital 1": {
+    "value": "",
+    "rect": [
+      69.6,
+      555.12,
+      548.76,
+      571.44
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Please provide the name and address of referring doctorhospital 2": {
+    "value": "",
+    "rect": [
+      69.6,
+      537.0,
+      548.76,
+      553.32
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "4 Please provide the name contact number and address of the doctor who is treating the insured for his current conditioninjury": {
+    "value": "",
+    "rect": [
+      43.92,
+      460.8,
+      551.64,
+      506.52
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Surgical operationprocedureRow1": {
+    "value": "",
+    "rect": [
+      43.68,
+      388.68,
+      296.76,
+      417.6
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of operationprocedure ddmmyyyyRow1": {
+    "value": "",
+    "rect": [
+      298.8,
+      388.68,
+      424.32,
+      417.6
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Surgical codetable please refer to your doctorRow1": {
+    "value": "",
+    "rect": [
+      426.36,
+      388.68,
+      551.88,
+      417.6
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Surgical operationprocedureRow2": {
+    "value": "",
+    "rect": [
+      43.68,
+      358.92,
+      296.76,
+      387.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of operationprocedure ddmmyyyyRow2": {
+    "value": "",
+    "rect": [
+      298.8,
+      358.92,
+      424.32,
+      387.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Surgical codetable please refer to your doctorRow2": {
+    "value": "",
+    "rect": [
+      426.36,
+      358.92,
+      551.88,
+      387.84
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "a Reason why the insureds conditiondisability is treated outside of Singapore": {
+    "value": "",
+    "rect": [
+      43.44,
+      312.0,
+      552.12,
+      331.2
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "b Date the insured left Singapore ddmmyyyy": {
+    "value": "",
+    "rect": [
+      43.44,
+      282.24,
+      552.12,
+      301.44
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "c The purpose of the overseas visit": {
+    "value": "",
+    "rect": [
+      43.44,
+      252.48,
+      552.12,
+      271.68
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "d What was the intended length of the overseas visit": {
+    "value": "",
+    "rect": [
+      43.44,
+      222.72,
+      297.0,
+      241.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "From ddmmyyyy": {
+    "value": "",
+    "rect": [
+      298.56,
+      222.72,
+      424.56,
+      241.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "To ddmmyyyy": {
+    "value": "",
+    "rect": [
+      426.12,
+      222.72,
+      552.12,
+      241.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of doctorRow1": {
+    "value": "",
+    "rect": [
+      43.68,
+      162.0,
+      169.2,
+      190.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of clinichospitalRow1": {
+    "value": "",
+    "rect": [
+      171.24,
+      162.0,
+      296.76,
+      190.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of consultation ddmmyyyyRow1": {
+    "value": "",
+    "rect": [
+      298.8,
+      162.0,
+      424.32,
+      190.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Reasons for consultationRow1": {
+    "value": "",
+    "rect": [
+      426.36,
+      162.0,
+      551.88,
+      190.92
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of doctorRow2": {
+    "value": "",
+    "rect": [
+      43.68,
+      132.24,
+      169.2,
+      161.16
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of clinichospitalRow2": {
+    "value": "",
+    "rect": [
+      171.24,
+      132.24,
+      296.76,
+      161.16
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of consultation ddmmyyyyRow2": {
+    "value": "",
+    "rect": [
+      298.8,
+      132.24,
+      424.32,
+      161.16
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Reasons for consultationRow2": {
+    "value": "",
+    "rect": [
+      426.36,
+      132.24,
+      551.88,
+      161.16
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of doctorRow1_2": {
+    "value": "",
+    "rect": [
+      43.68,
+      68.4,
+      169.2,
+      97.32
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of clinichospitalRow1_2": {
+    "value": "",
+    "rect": [
+      171.24,
+      68.4,
+      296.76,
+      97.32
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of consultation ddmmyyyyRow1_2": {
+    "value": "",
+    "rect": [
+      298.8,
+      68.4,
+      424.32,
+      97.32
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Reasons for consultationRow1_2": {
+    "value": "",
+    "rect": [
+      426.36,
+      68.4,
+      551.88,
+      97.32
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of doctorRow2_2": {
+    "value": "",
+    "rect": [
+      43.68,
+      38.64,
+      169.2,
+      67.56
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of clinichospitalRow2_2": {
+    "value": "",
+    "rect": [
+      171.24,
+      38.64,
+      296.76,
+      67.56
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of consultation ddmmyyyyRow2_2": {
+    "value": "",
+    "rect": [
+      298.8,
+      38.64,
+      424.32,
+      67.56
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Reasons for consultationRow2_2": {
+    "value": "",
+    "rect": [
+      426.36,
+      38.64,
+      551.88,
+      67.56
+    ],
+    "page": 4,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of doctorRow1_3": {
+    "value": "",
+    "rect": [
+      43.68,
+      723.0,
+      169.2,
+      750.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of clinichospitalRow1_3": {
+    "value": "",
+    "rect": [
+      171.24,
+      723.0,
+      296.76,
+      750.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of consultation ddmmyyyyRow1_3": {
+    "value": "",
+    "rect": [
+      298.8,
+      723.0,
+      424.32,
+      750.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Reasons for consultationRow1_3": {
+    "value": "",
+    "rect": [
+      426.36,
+      723.0,
+      551.88,
+      750.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of doctorRow2_3": {
+    "value": "",
+    "rect": [
+      43.68,
+      694.68,
+      169.2,
+      721.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Name and address of clinichospitalRow2_3": {
+    "value": "",
+    "rect": [
+      171.24,
+      694.68,
+      296.76,
+      721.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Dates of consultation ddmmyyyyRow2_3": {
+    "value": "",
+    "rect": [
+      298.8,
+      694.68,
+      424.32,
+      721.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Reasons for consultationRow2_3": {
+    "value": "",
+    "rect": [
+      426.36,
+      694.68,
+      551.88,
+      721.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "10 Is the insured covered for medical expenses by any other insurance companyies his employer or any other parties If Yes please state details below": {
+    "value": "",
+    "rect": [
+      43.92,
+      618.0,
+      492.12,
+      654.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of employer insurance company etcRow1": {
+    "value": "",
+    "rect": [
+      43.68,
+      538.56,
+      155.04,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Policy numberRow1": {
+    "value": "",
+    "rect": [
+      157.08,
+      538.56,
+      237.24,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Date of issue ddmmyyyyRow1": {
+    "value": "",
+    "rect": [
+      239.28,
+      538.56,
+      296.76,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Type of planRow1": {
+    "value": "",
+    "rect": [
+      298.8,
+      538.56,
+      367.68,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim amount Sum assured SRow1": {
+    "value": "",
+    "rect": [
+      369.72,
+      538.56,
+      432.84,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim notified YesNoRow1": {
+    "value": "",
+    "rect": [
+      434.88,
+      538.56,
+      492.36,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim paid YesNoRow1": {
+    "value": "",
+    "rect": [
+      494.4,
+      538.56,
+      551.88,
+      565.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of employer insurance company etcRow2": {
+    "value": "",
+    "rect": [
+      43.68,
+      510.24,
+      155.04,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Policy numberRow2": {
+    "value": "",
+    "rect": [
+      157.08,
+      510.24,
+      237.24,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Date of issue ddmmyyyyRow2": {
+    "value": "",
+    "rect": [
+      239.28,
+      510.24,
+      296.76,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Type of planRow2": {
+    "value": "",
+    "rect": [
+      298.8,
+      510.24,
+      367.68,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim amount Sum assured SRow2": {
+    "value": "",
+    "rect": [
+      369.72,
+      510.24,
+      432.84,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim notified YesNoRow2": {
+    "value": "",
+    "rect": [
+      434.88,
+      510.24,
+      492.36,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Claim paid YesNoRow2": {
+    "value": "",
+    "rect": [
+      494.4,
+      510.24,
+      551.88,
+      537.36
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Details": {
+    "value": "",
+    "rect": [
+      265.2,
+      412.44,
+      548.76,
+      426.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Details_2": {
+    "value": "",
+    "rect": [
+      265.2,
+      394.32,
+      548.76,
+      408.0
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Details_3": {
+    "value": "",
+    "rect": [
+      265.2,
+      376.2,
+      548.76,
+      389.88
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Details_4": {
+    "value": "",
+    "rect": [
+      265.2,
+      358.2,
+      548.76,
+      371.88
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Direct credit to your bank account 4 Please submit a copy of your bank bookstatement for account verification It must show the bank name bank": {
+    "value": "/On",
+    "rect": [
+      46.68,
+      309.6,
+      55.2,
+      318.12
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "PayNow to your NRICFIN linked account Please ensure that your PayNow is linked to your NRICFIN Visit incomecomsgpayoutpaynow for more": {
+    "value": "/On",
+    "rect": [
+      46.68,
+      288.72,
+      55.2,
+      297.24
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Telegraphic Transfer 5 6 For payee who is residing overseas only please complete the required information and submit a copy of your bank book": {
+    "value": "/On",
+    "rect": [
+      46.68,
+      267.96,
+      55.2,
+      276.48
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Currency for remittance": {
+    "value": "",
+    "rect": [
+      393.96,
+      238.8,
+      541.56,
+      252.48
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of bank": {
+    "value": "",
+    "rect": [
+      59.04,
+      200.4,
+      182.04,
+      223.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Bank address": {
+    "value": "",
+    "rect": [
+      183.84,
+      200.4,
+      306.72,
+      223.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Swift code": {
+    "value": "",
+    "rect": [
+      308.52,
+      200.4,
+      397.44,
+      223.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Sort code if applicable": {
+    "value": "",
+    "rect": [
+      399.24,
+      200.4,
+      544.8,
+      223.8
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Intermediary bank name if applicable": {
+    "value": "",
+    "rect": [
+      59.16,
+      152.16,
+      181.92,
+      180.0
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Country of intermediary bank if applicable": {
+    "value": "",
+    "rect": [
+      183.96,
+      152.16,
+      306.6,
+      180.0
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Intermediary bank code Swift code if applicable": {
+    "value": "",
+    "rect": [
+      308.64,
+      152.16,
+      397.32,
+      180.0
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "Remarks any other important information required for transmittance of proceeds": {
+    "value": "",
+    "rect": [
+      399.36,
+      152.16,
+      544.68,
+      180.0
+    ],
+    "page": 5,
+    "extraction_method": "annotation_widget"
+  },
+  "I prefer to have the communications relating to this claim copied to the preferred servicing advisor indicated below": {
+    "value": "/On",
+    "rect": [
+      46.92,
+      742.68,
+      55.44,
+      751.08
+    ],
+    "page": 6,
+    "extraction_method": "annotation_widget"
+  },
+  "Name of advisor": {
+    "value": "",
+    "rect": [
+      103.56,
+      724.815,
+      548.76,
+      742.215
+    ],
+    "page": 6,
+    "extraction_method": "annotation_widget"
+  },
+  "Contact number of advisor": {
+    "value": "",
+    "rect": [
+      137.4,
+      702.36,
+      548.52,
+      719.76
+    ],
+    "page": 6,
+    "extraction_method": "annotation_widget"
+  },
+  "Full name as shown in NRICFIN cardPassport and signaturethumbprint of policyholder assignee if policy is assigned": {
+    "value": "",
+    "rect": [
+      43.68,
+      394.2,
+      255.348,
+      423.0
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "NRICFINPassport number": {
+    "value": "",
+    "rect": [
+      350.16,
+      394.2,
+      455.28,
+      437.04
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Date signed ddmmyyyy": {
+    "value": "",
+    "rect": [
+      457.8,
+      394.2,
+      551.64,
+      437.04
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Full name as shown in NRICFIN cardPassport and signaturethumbprint of insured who is 21 years old or above if different from policyholderassignee": {
+    "value": "",
+    "rect": [
+      43.68,
+      340.32,
+      254.973,
+      369.12
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "NRICFINPassport number_2": {
+    "value": "",
+    "rect": [
+      350.16,
+      340.32,
+      455.28,
+      383.16
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Date signed ddmmyyyy_2": {
+    "value": "",
+    "rect": [
+      457.8,
+      340.32,
+      551.64,
+      383.16
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Full name as shown in NRICFIN cardPassport and signaturethumbprint of family member who is 21 years old or above if claim on family waiver benefit": {
+    "value": "",
+    "rect": [
+      43.68,
+      286.44,
+      253.475,
+      315.24
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "NRICFINPassport number_3": {
+    "value": "",
+    "rect": [
+      350.16,
+      286.44,
+      455.28,
+      329.28
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Date signed ddmmyyyy_3": {
+    "value": "",
+    "rect": [
+      457.8,
+      286.44,
+      551.64,
+      329.28
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Full name as shown in NRICFIN cardPassport and signature of claimant who is 21 years old or above if the policyholderassigneeinsuredfamily member does not have the mental capacity or is below 21 years old": {
+    "value": "",
+    "rect": [
+      43.56,
+      232.56,
+      252.471,
+      256.68
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "NRICFINPassport number_4": {
+    "value": "",
+    "rect": [
+      350.16,
+      232.56,
+      455.28,
+      275.52
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Date signed ddmmyyyy_4": {
+    "value": "",
+    "rect": [
+      457.8,
+      232.56,
+      551.64,
+      275.52
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Claimants relationship to policyholder": {
+    "value": "",
+    "rect": [
+      43.68,
+      187.2,
+      551.88,
+      216.0
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Email address of claimant": {
+    "value": "",
+    "rect": [
+      349.92,
+      141.84,
+      551.88,
+      170.64
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Please indicate why policyholderassigneeinsuredfamily member is unable to sign": {
+    "value": "",
+    "rect": [
+      43.68,
+      96.48,
+      551.88,
+      125.28
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Signature59": {
+    "value": null,
+    "rect": [
+      255.618,
+      392.683,
+      348.802,
+      426.683
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Signature60": {
+    "value": null,
+    "rect": [
+      255.243,
+      339.111,
+      349.551,
+      373.111
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Signature61": {
+    "value": null,
+    "rect": [
+      253.744,
+      285.915,
+      348.802,
+      319.915
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  },
+  "Signature62": {
+    "value": null,
+    "rect": [
+      252.621,
+      232.344,
+      349.551,
+      266.344
+    ],
+    "page": 7,
+    "extraction_method": "annotation_widget"
+  }
+}
