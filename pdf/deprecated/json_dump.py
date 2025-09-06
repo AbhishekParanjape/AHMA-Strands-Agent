@@ -103,6 +103,7 @@ def extract_field_objects(pdf_path: str) -> Dict[str, Dict[str, Any]]:
                     "AS": _str_or_none(annot.get("/AS")),
                     "FT": _str_or_none(annot.get("/FT")),
                     "Ff": annot.get("/Ff"),
+                    "raw_keys": [ _str_or_none(k) for k in annot.keys() ],
                 }
 
     return out
@@ -141,6 +142,7 @@ def extract_acroform_hierarchy(pdf_path: str) -> List[Dict[str, Any]]:
                 "DV": _str_or_none(fld.get("/DV")),
                 "Ff": fld.get("/Ff"),
                 "Kids": len(_resolve(fld.get("/Kids"))) if _resolve(fld.get("/Kids")) else 0,
+                "raw_keys": [ _str_or_none(k) for k in fld.keys() ],
             })
 
             kids = _resolve(fld.get("/Kids"))

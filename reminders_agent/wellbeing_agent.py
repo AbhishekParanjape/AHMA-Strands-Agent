@@ -120,4 +120,4 @@ def test_agent():
 
         response = agent(user_input)
 
-test_agent()
+# test_agent()  # Commented out to prevent interactive loop
