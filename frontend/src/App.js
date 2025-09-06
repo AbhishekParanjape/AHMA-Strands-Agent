@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
+import ReactMarkdown from 'react-markdown';
 import './App.css';
 
 // Main App Component
@@ -12,6 +13,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [pdfFiles, setPdfFiles] = useState({ uploaded: [], processed: [] });
   const [isProcessingPdf, setIsProcessingPdf] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -324,12 +326,22 @@ function App() {
   return (
     <div className="app-container">
       {/* Sidebar */}
-      <div className="sidebar">
+      <div className={`sidebar ${sidebarCollapsed ? 'collapsed' : ''}`}>
+        <button 
+          className="sidebar-toggle"
+          onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+        >
+          <i className={`fas fa-chevron-${sidebarCollapsed ? 'right' : 'left'}`}></i>
+        </button>
+        
         <div className="sidebar-header">
+          <h1>AHMA</h1>
+          <p>Advanced Healthcare Management Assistant</p>
         </div>
 
-        {/* Google Calendar Widget */}
-        <div className="widget fade-in">
+        <div className="widgets-container">
+          {/* Google Calendar Widget */}
+          <div className="widget fade-in">
           <div className="widget-header">
             <i className="fas fa-calendar-alt"></i>
             <h3>Google Calendar</h3>
@@ -338,9 +350,8 @@ function App() {
             {calendarEvents.length > 0 ? (
               calendarEvents.map(event => (
                 <div key={event.id} className="event-item slide-in">
-                  <div className="event-title">{event.summary}</div>
                   <div className="event-time">
-                    <i className="fas fa-clock"></i> 
+                    <i className="fas fa-clock"></i>
                     {new Date(event.start).toLocaleString('en-US', {
                       month: 'short',
                       day: 'numeric',
@@ -349,6 +360,7 @@ function App() {
                       hour12: true
                     })}
                   </div>
+                  <div className="event-title">{event.summary}</div>
                 </div>
               ))
             ) : (
@@ -426,13 +438,13 @@ function App() {
 
           {/* Uploaded PDFs */}
           {pdfFiles.uploaded.length > 0 && (
-            <div className="pdf-section">
-              <h4>📄 Uploaded Forms</h4>
+            <div className="pdf-list">
+              <h4><i className="fas fa-file-pdf"></i> Uploaded Forms</h4>
               {pdfFiles.uploaded.map((file, index) => (
-                <div key={index} className="pdf-item">
-                  <div className="pdf-info">
-                    <span className="pdf-name">{file.filename}</span>
-                    <span className="pdf-size">({(file.size / 1024).toFixed(1)} KB)</span>
+                <div key={index} className="pdf-file-item">
+                  <div className="pdf-file-info">
+                    <div className="pdf-name">{file.filename}</div>
+                    <div className="pdf-size">({(file.size / 1024).toFixed(1)} KB)</div>
                   </div>
                   <div className="pdf-actions">
                     <button 
@@ -450,13 +462,13 @@ function App() {
 
           {/* Processed PDFs */}
           {pdfFiles.processed.length > 0 && (
-            <div className="pdf-section">
-              <h4>✅ Filled Forms</h4>
+            <div className="pdf-list">
+              <h4><i className="fas fa-check-circle"></i> Filled Forms</h4>
               {pdfFiles.processed.map((file, index) => (
-                <div key={index} className="pdf-item">
-                  <div className="pdf-info">
-                    <span className="pdf-name">{file.filename}</span>
-                    <span className="pdf-size">({(file.size / 1024).toFixed(1)} KB)</span>
+                <div key={index} className="pdf-file-item">
+                  <div className="pdf-file-info">
+                    <div className="pdf-name">{file.filename}</div>
+                    <div className="pdf-size">({(file.size / 1024).toFixed(1)} KB)</div>
                   </div>
                   <div className="pdf-actions">
                     <button 
@@ -471,43 +483,59 @@ function App() {
             </div>
           )}
 
-          {/* Insurance Chat */}
-          <div className="insurance-chat">
-            <div className="insurance-message">
-              Need help with insurance claims or PDF forms?
-            </div>
-          </div>
-          <button className="insurance-button" onClick={startInsuranceChat}>
-            <i className="fas fa-comments"></i> Start Insurance Chat
-          </button>
+        </div>
         </div>
       </div>
 
       {/* Main Chat Area */}
-      <div className="main-chat">
+      <div className="chat-container">
         <div className="chat-header">
-          <div className="chat-header-avatar">
-            <img src="/logo.png" alt="AHMA Logo" className="ahma-logo-small" />
-          </div>
-          <div className="chat-header-info">
-            <h2>AHMA</h2>
-            <p>Advanced Healthcare Management Assistant</p>
-          </div>
+          <h2>AHMA</h2>
         </div>
 
-        <div className="chat-container">
+        <div className="chat-messages">
           {messages.map(message => (
             <div key={message.id} className={`message ${message.sender} slide-in`}>
-              <div className="message-content" dangerouslySetInnerHTML={{ __html: message.content }}></div>
+              {message.sender === 'user' ? (
+                <>
+                  <div className="message-content">
+                    <ReactMarkdown>{message.content}</ReactMarkdown>
+                  </div>
+                  <div className="message-timestamp">
+                    {new Date(message.timestamp).toLocaleTimeString('en-US', {
+                      hour: 'numeric',
+                      minute: '2-digit',
+                      hour12: true
+                    })}
+                  </div>
+                  <div className="message-icon"></div>
+                </>
+              ) : (
+                <>
+                  <div className="message-content">
+                    <ReactMarkdown>{message.content}</ReactMarkdown>
+                  </div>
+                  <div className="message-timestamp">
+                    {new Date(message.timestamp).toLocaleTimeString('en-US', {
+                      hour: 'numeric',
+                      minute: '2-digit',
+                      hour12: true
+                    })}
+                  </div>
+                  <div className="message-icon"></div>
+                </>
+              )}
             </div>
           ))}
           
           {isTyping && (
             <div className="message assistant">
-              <div className="message-content">
-                <div className="loading">
-                  <div className="loading-spinner"></div>
-                  AHMA is typing...
+              <div className="typing-indicator">
+                <div className="message-icon"></div>
+                <div className="typing-dots">
+                  <div className="typing-dot"></div>
+                  <div className="typing-dot"></div>
+                  <div className="typing-dot"></div>
                 </div>
               </div>
             </div>
