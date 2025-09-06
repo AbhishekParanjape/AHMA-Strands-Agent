@@ -87,13 +87,17 @@ def process_insurance_pdf(pdf_path: str, form_type: str = None, output_path: str
         import tempfile
         from pathlib import Path
         
+        # Get the project root directory (where superagent_test.py is located)
+        project_root = os.path.dirname(os.path.abspath(__file__))
+        
         # Try to find the PDF file in common locations
         actual_pdf_path = None
         search_paths = [
             pdf_path,  # Try the path as provided
-            f"pdf/{pdf_path}",  # Try in pdf directory
-            f"backend/pdf_uploads/{pdf_path}",  # Try in backend uploads
-            f"pdf/{pdf_path}.pdf" if not pdf_path.endswith('.pdf') else f"pdf/{pdf_path}",  # Try with .pdf extension
+            os.path.join(project_root, "pdf", pdf_path),  # Try in pdf directory
+            os.path.join(project_root, "backend", "pdf_uploads", pdf_path),  # Try in backend uploads
+            os.path.join(project_root, "backend", "pdf_processed", pdf_path),  # Try in backend processed
+            os.path.join(project_root, "pdf", f"{pdf_path}.pdf") if not pdf_path.endswith('.pdf') else os.path.join(project_root, "pdf", pdf_path),  # Try with .pdf extension
         ]
         
         for search_path in search_paths:
@@ -104,11 +108,19 @@ def process_insurance_pdf(pdf_path: str, form_type: str = None, output_path: str
         if not actual_pdf_path:
             # List available PDFs to help user
             available_pdfs = []
-            for search_dir in ["pdf", "backend/pdf_uploads"]:
+            search_dirs = [
+                os.path.join(project_root, "pdf"),
+                os.path.join(project_root, "backend", "pdf_uploads"),
+                os.path.join(project_root, "backend", "pdf_processed")
+            ]
+            
+            for search_dir in search_dirs:
                 if os.path.exists(search_dir):
                     for file in os.listdir(search_dir):
                         if file.lower().endswith('.pdf'):
-                            available_pdfs.append(f"{search_dir}/{file}")
+                            # Make path relative to project root for display
+                            rel_path = os.path.relpath(os.path.join(search_dir, file), project_root)
+                            available_pdfs.append(rel_path)
             
             if available_pdfs:
                 return f"❌ PDF file '{pdf_path}' not found.\n\n" \
@@ -227,12 +239,19 @@ def list_pdf_files(directory: str = "all") -> str:
     try:
         from pathlib import Path
         
+        # Get the project root directory
+        project_root = os.path.dirname(os.path.abspath(__file__))
+        
         # Define common PDF directories to search
         search_dirs = []
         if directory == "all":
-            search_dirs = ["pdf", "backend/pdf_uploads", "backend/pdf_processed"]
+            search_dirs = [
+                os.path.join(project_root, "pdf"),
+                os.path.join(project_root, "backend", "pdf_uploads"),
+                os.path.join(project_root, "backend", "pdf_processed")
+            ]
         else:
-            search_dirs = [directory]
+            search_dirs = [os.path.join(project_root, directory)]
         
         all_pdf_files = []
         
@@ -241,11 +260,14 @@ def list_pdf_files(directory: str = "all") -> str:
             if pdf_dir.exists():
                 pdf_files = list(pdf_dir.glob("*.pdf"))
                 for pdf_file in pdf_files:
+                    # Make path relative to project root for display
+                    rel_path = os.path.relpath(str(pdf_file), project_root)
+                    rel_dir = os.path.relpath(search_dir, project_root)
                     all_pdf_files.append({
                         'name': pdf_file.name,
-                        'path': str(pdf_file),
+                        'path': rel_path,
                         'size': pdf_file.stat().st_size,
-                        'directory': search_dir
+                        'directory': rel_dir
                     })
         
         if not all_pdf_files:
