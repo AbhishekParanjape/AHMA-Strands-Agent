@@ -1,9 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import sys
 import os
 import requests
 from dotenv import load_dotenv
+import tempfile
+import subprocess
+import json
+from pathlib import Path
+from werkzeug.utils import secure_filename
 
 # -----------------------------------------------------------------------------
 # Imports & Setup
@@ -15,6 +20,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from superagent_test import router_agent
 from google_calendar_service import GoogleCalendarService
 
+
 load_dotenv()  # Load environment variables from .env if present
 
 app = Flask(__name__)
@@ -22,6 +28,18 @@ CORS(app)  # Enable CORS for all routes
 
 # Initialize Google Calendar service
 gcal_service = GoogleCalendarService()
+
+# PDF processing configuration
+UPLOAD_FOLDER = 'pdf_uploads'
+PROCESSED_FOLDER = 'pdf_processed'
+ALLOWED_EXTENSIONS = {'pdf'}
+
+# Create upload directories if they don't exist
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+os.makedirs(PROCESSED_FOLDER, exist_ok=True)
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # -----------------------------------------------------------------------------
 # Helpers
@@ -325,6 +343,199 @@ def complete_task(task_id):
         print(f"Error completing task: {e}")
         return jsonify({'error': 'Failed to complete task', 'success': False}), 500
 
+
+# -----------------------------------------------------------------------------
+# PDF Processing Routes
+# -----------------------------------------------------------------------------
+
+@app.route('/api/pdf/upload', methods=['POST'])
+def upload_pdf():
+    """
+    Upload a PDF file for processing.
+    """
+    try:
+        if 'file' not in request.files:
+            return jsonify({'error': 'No file provided', 'success': False}), 400
+        
+        file = request.files['file']
+        if file.filename == '':
+            return jsonify({'error': 'No file selected', 'success': False}), 400
+        
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(UPLOAD_FOLDER, filename)
+            file.save(filepath)
+            
+            return jsonify({
+                'success': True,
+                'filename': filename,
+                'message': 'File uploaded successfully'
+            })
+        else:
+            return jsonify({'error': 'Invalid file type. Only PDF files are allowed.', 'success': False}), 400
+            
+    except Exception as e:
+        print(f"Error uploading PDF: {str(e)}")
+        return jsonify({'error': 'Failed to upload file', 'success': False}), 500
+
+@app.route('/api/pdf/process', methods=['POST'])
+def process_pdf():
+    """
+    Process an uploaded PDF using the PDF processing workflow.
+    """
+    try:
+        data = request.get_json(silent=True) or {}
+        filename = data.get('filename', '').strip()
+        form_type = data.get('form_type', 'auto')
+        
+        if not filename:
+            return jsonify({'error': 'No filename provided', 'success': False}), 400
+        
+        # Check if file exists
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        if not os.path.exists(filepath):
+            return jsonify({'error': 'File not found', 'success': False}), 404
+        
+        # Generate output filename
+        output_filename = f"{Path(filename).stem}_filled{Path(filename).suffix}"
+        output_path = os.path.join(PROCESSED_FOLDER, output_filename)
+        
+        print(f"🔄 Processing PDF: {filename}")
+        
+        # Step 1: Extract form fields
+        with tempfile.TemporaryDirectory() as temp_dir:
+            fields_json = os.path.join(temp_dir, "fields.json")
+            result = subprocess.run([
+                "python", "../pdf/json_dump2.py",
+                "--pdf", filepath,
+                "--out", fields_json
+            ], check=True, capture_output=True, text=True, cwd=os.path.dirname(os.path.abspath(__file__)))
+            
+            # Step 2: Use appropriate example data based on form type
+            if form_type == "health_declaration":
+                example_data = "../pdf/health_example_data.json"
+            else:
+                example_data = "../pdf/example_data.json"
+            
+            # Step 3: Merge data with fields
+            values_json = os.path.join(temp_dir, "values.json")
+            result = subprocess.run([
+                "python", "../pdf/fetchdb.py",
+                "--dump", fields_json,
+                "--example-data", example_data,
+                "--out", values_json
+            ], check=True, capture_output=True, text=True, cwd=os.path.dirname(os.path.abspath(__file__)))
+            
+            # Step 4: Fill PDF
+            result = subprocess.run([
+                "python", "../pdf/autofill.py",
+                "--pdf-in", filepath,
+                "--pdf-out", output_path,
+                "--values", values_json
+            ], check=True, capture_output=True, text=True, cwd=os.path.dirname(os.path.abspath(__file__)))
+        
+        return jsonify({
+            'success': True,
+            'original_filename': filename,
+            'processed_filename': output_filename,
+            'form_type': form_type,
+            'message': 'PDF processed successfully'
+        })
+        
+    except subprocess.CalledProcessError as e:
+        print(f"Error processing PDF: {e.stderr}")
+        return jsonify({'error': f'PDF processing failed: {e.stderr}', 'success': False}), 500
+    except Exception as e:
+        print(f"Error processing PDF: {str(e)}")
+        return jsonify({'error': 'Failed to process PDF', 'success': False}), 500
+
+@app.route('/api/pdf/download/<filename>', methods=['GET'])
+def download_pdf(filename):
+    """
+    Download a processed PDF file.
+    """
+    try:
+        filepath = os.path.join(PROCESSED_FOLDER, filename)
+        if not os.path.exists(filepath):
+            return jsonify({'error': 'File not found', 'success': False}), 404
+        
+        return send_file(filepath, as_attachment=True, download_name=filename)
+        
+    except Exception as e:
+        print(f"Error downloading PDF: {str(e)}")
+        return jsonify({'error': 'Failed to download file', 'success': False}), 500
+
+@app.route('/api/pdf/list', methods=['GET'])
+def list_pdfs():
+    """
+    List uploaded and processed PDF files.
+    """
+    try:
+        uploaded_files = []
+        processed_files = []
+        
+        # List uploaded files
+        if os.path.exists(UPLOAD_FOLDER):
+            for filename in os.listdir(UPLOAD_FOLDER):
+                if filename.lower().endswith('.pdf'):
+                    filepath = os.path.join(UPLOAD_FOLDER, filename)
+                    stat = os.stat(filepath)
+                    uploaded_files.append({
+                        'filename': filename,
+                        'size': stat.st_size,
+                        'uploaded_at': stat.st_mtime,
+                        'type': 'uploaded'
+                    })
+        
+        # List processed files
+        if os.path.exists(PROCESSED_FOLDER):
+            for filename in os.listdir(PROCESSED_FOLDER):
+                if filename.lower().endswith('.pdf'):
+                    filepath = os.path.join(PROCESSED_FOLDER, filename)
+                    stat = os.stat(filepath)
+                    processed_files.append({
+                        'filename': filename,
+                        'size': stat.st_size,
+                        'processed_at': stat.st_mtime,
+                        'type': 'processed'
+                    })
+        
+        return jsonify({
+            'success': True,
+            'uploaded_files': uploaded_files,
+            'processed_files': processed_files
+        })
+        
+    except Exception as e:
+        print(f"Error listing PDFs: {str(e)}")
+        return jsonify({'error': 'Failed to list files', 'success': False}), 500
+
+@app.route('/api/pdf/delete/<filename>', methods=['DELETE'])
+def delete_pdf(filename):
+    """
+    Delete a PDF file (uploaded or processed).
+    """
+    try:
+        file_type = request.args.get('type', 'uploaded')  # 'uploaded' or 'processed'
+        
+        if file_type == 'uploaded':
+            filepath = os.path.join(UPLOAD_FOLDER, filename)
+        else:
+            filepath = os.path.join(PROCESSED_FOLDER, filename)
+        
+        if not os.path.exists(filepath):
+            return jsonify({'error': 'File not found', 'success': False}), 404
+        
+        os.remove(filepath)
+        
+        return jsonify({
+            'success': True,
+            'message': f'File {filename} deleted successfully'
+        })
+        
+    except Exception as e:
+        print(f"Error deleting PDF: {str(e)}")
+        return jsonify({'error': 'Failed to delete file', 'success': False}), 500
 
 @app.route('/health', methods=['GET'])
 def health_check():

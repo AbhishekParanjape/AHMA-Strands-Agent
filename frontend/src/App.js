@@ -10,6 +10,8 @@ function App() {
   const [calendarEvents, setCalendarEvents] = useState([]);
   const [todoistTasks, setTodoistTasks] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [pdfFiles, setPdfFiles] = useState({ uploaded: [], processed: [] });
+  const [isProcessingPdf, setIsProcessingPdf] = useState(false);
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -24,6 +26,7 @@ function App() {
     // Load initial data
     loadCalendarEvents();
     loadTodoistTasks();
+    loadPdfFiles();
     setIsLoading(false);
 
     // Add welcome message
@@ -59,6 +62,159 @@ function App() {
       console.error('Error loading Todoist tasks:', error);
       setTodoistTasks([]);
     }
+  };
+
+  // Load PDF Files
+  const loadPdfFiles = async () => {
+    try {
+      const response = await fetch('/api/pdf/list');
+      const data = await response.json();
+      if (data.success) {
+        setPdfFiles({
+          uploaded: data.uploaded_files || [],
+          processed: data.processed_files || []
+        });
+      }
+    } catch (error) {
+      console.error('Error loading PDF files:', error);
+      setPdfFiles({ uploaded: [], processed: [] });
+    }
+  };
+
+  // Upload PDF File
+  const uploadPdf = async (file) => {
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const response = await fetch('/api/pdf/upload', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        loadPdfFiles(); // Reload PDF list
+        setMessages(prev => [...prev, {
+          id: Date.now(),
+          sender: 'assistant',
+          content: `✅ PDF uploaded successfully: ${data.filename}`,
+          timestamp: new Date()
+        }]);
+        return true;
+      } else {
+        setMessages(prev => [...prev, {
+          id: Date.now(),
+          sender: 'assistant',
+          content: `❌ Upload failed: ${data.error}`,
+          timestamp: new Date()
+        }]);
+        return false;
+      }
+    } catch (error) {
+      console.error('Error uploading PDF:', error);
+      setMessages(prev => [...prev, {
+        id: Date.now(),
+        sender: 'assistant',
+        content: '❌ Error uploading PDF. Please try again.',
+        timestamp: new Date()
+      }]);
+      return false;
+    }
+  };
+
+  // Process PDF File
+  const processPdf = async (filename, formType = 'auto') => {
+    try {
+      setIsProcessingPdf(true);
+      const response = await fetch('/api/pdf/process', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ filename, form_type: formType })
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        loadPdfFiles(); // Reload PDF list
+        setMessages(prev => [...prev, {
+          id: Date.now(),
+          sender: 'assistant',
+          content: `✅ PDF processed successfully! Filled form saved as: ${data.processed_filename}`,
+          timestamp: new Date()
+        }]);
+        return true;
+      } else {
+        setMessages(prev => [...prev, {
+          id: Date.now(),
+          sender: 'assistant',
+          content: `❌ Processing failed: ${data.error}`,
+          timestamp: new Date()
+        }]);
+        return false;
+      }
+    } catch (error) {
+      console.error('Error processing PDF:', error);
+      setMessages(prev => [...prev, {
+        id: Date.now(),
+        sender: 'assistant',
+        content: '❌ Error processing PDF. Please try again.',
+        timestamp: new Date()
+      }]);
+      return false;
+    } finally {
+      setIsProcessingPdf(false);
+    }
+  };
+
+  // Download PDF File
+  const downloadPdf = async (filename, type = 'processed') => {
+    try {
+      const response = await fetch(`/api/pdf/download/${filename}`);
+      if (response.ok) {
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+      } else {
+        setMessages(prev => [...prev, {
+          id: Date.now(),
+          sender: 'assistant',
+          content: '❌ Error downloading PDF. File may not exist.',
+          timestamp: new Date()
+        }]);
+      }
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+      setMessages(prev => [...prev, {
+        id: Date.now(),
+        sender: 'assistant',
+        content: '❌ Error downloading PDF. Please try again.',
+        timestamp: new Date()
+      }]);
+    }
+  };
+
+  // Handle File Upload
+  const handleFileUpload = (event) => {
+    const file = event.target.files[0];
+    if (file && file.type === 'application/pdf') {
+      uploadPdf(file);
+    } else {
+      setMessages(prev => [...prev, {
+        id: Date.now(),
+        sender: 'assistant',
+        content: '❌ Please select a valid PDF file.',
+        timestamp: new Date()
+      }]);
+    }
+    event.target.value = ''; // Reset input
   };
 
   // Send Message
@@ -229,15 +385,80 @@ function App() {
           </div>
         </div>
 
-        {/* Insurance Chatbot Widget */}
+        {/* Insurance & PDF Processing Widget */}
         <div className="widget fade-in">
           <div className="widget-header">
             <i className="fas fa-shield-alt"></i>
-            <h3>Insurance Assistant</h3>
+            <h3>Insurance & PDF Forms</h3>
           </div>
+          
+          {/* PDF Upload Section */}
+          <div className="pdf-upload-section">
+            <div className="upload-area">
+              <input
+                type="file"
+                id="pdf-upload"
+                accept=".pdf"
+                onChange={handleFileUpload}
+                style={{ display: 'none' }}
+              />
+              <label htmlFor="pdf-upload" className="upload-button">
+                <i className="fas fa-upload"></i> Upload PDF Form
+              </label>
+            </div>
+          </div>
+
+          {/* Uploaded PDFs */}
+          {pdfFiles.uploaded.length > 0 && (
+            <div className="pdf-section">
+              <h4>📄 Uploaded Forms</h4>
+              {pdfFiles.uploaded.map((file, index) => (
+                <div key={index} className="pdf-item">
+                  <div className="pdf-info">
+                    <span className="pdf-name">{file.filename}</span>
+                    <span className="pdf-size">({(file.size / 1024).toFixed(1)} KB)</span>
+                  </div>
+                  <div className="pdf-actions">
+                    <button 
+                      className="process-button"
+                      onClick={() => processPdf(file.filename, 'auto')}
+                      disabled={isProcessingPdf}
+                    >
+                      {isProcessingPdf ? '⏳' : '⚡'} Process
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Processed PDFs */}
+          {pdfFiles.processed.length > 0 && (
+            <div className="pdf-section">
+              <h4>✅ Filled Forms</h4>
+              {pdfFiles.processed.map((file, index) => (
+                <div key={index} className="pdf-item">
+                  <div className="pdf-info">
+                    <span className="pdf-name">{file.filename}</span>
+                    <span className="pdf-size">({(file.size / 1024).toFixed(1)} KB)</span>
+                  </div>
+                  <div className="pdf-actions">
+                    <button 
+                      className="download-button"
+                      onClick={() => downloadPdf(file.filename)}
+                    >
+                      <i className="fas fa-download"></i> Download
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Insurance Chat */}
           <div className="insurance-chat">
             <div className="insurance-message">
-              Need help with insurance claims?
+              Need help with insurance claims or PDF forms?
             </div>
           </div>
           <button className="insurance-button" onClick={startInsuranceChat}>

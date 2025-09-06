@@ -182,7 +182,7 @@ body {
   margin-top: 3px;
 }
 
-/* Insurance Chatbot Widget */
+/* Insurance & PDF Processing Widget */
 .insurance-chat {
   max-height: 150px;
   overflow-y: auto;
@@ -212,6 +212,129 @@ body {
 
 .insurance-button:hover {
   background: #600000;
+}
+
+/* PDF Upload Section */
+.pdf-upload-section {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.upload-area {
+  text-align: center;
+}
+
+.upload-button {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.upload-button:hover {
+  background: #218838;
+}
+
+.upload-button i {
+  margin-right: 8px;
+}
+
+/* PDF Sections */
+.pdf-section {
+  margin-bottom: 15px;
+}
+
+.pdf-section h4 {
+  color: #2c3e50;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.pdf-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-left: 4px solid #17a2b8;
+  transition: background 0.3s ease;
+}
+
+.pdf-item:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.pdf-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.pdf-name {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pdf-size {
+  display: block;
+  font-size: 11px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.pdf-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.process-button, .download-button {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.process-button:hover {
+  background: #138496;
+}
+
+.process-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.download-button {
+  background: #28a745;
+}
+
+.download-button:hover {
+  background: #218838;
+}
+
+.download-button i {
+  margin-right: 4px;
 }
 
 /* Main Chat Area */

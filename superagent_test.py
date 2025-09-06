@@ -67,7 +67,7 @@ def process_insurance_pdf(pdf_path: str, form_type: str = None, output_path: str
     It can handle health declaration forms, medical claim forms, and other insurance documents.
     
     Args:
-        pdf_path: Path to the PDF file (local path)
+        pdf_path: Path to the PDF file (local path or filename)
         form_type: Type of form for better data generation (optional)
                   - "health_declaration" for health declaration forms
                   - "medical_claim" for medical/accident claim forms
@@ -87,19 +87,51 @@ def process_insurance_pdf(pdf_path: str, form_type: str = None, output_path: str
         import tempfile
         from pathlib import Path
         
+        # Try to find the PDF file in common locations
+        actual_pdf_path = None
+        search_paths = [
+            pdf_path,  # Try the path as provided
+            f"pdf/{pdf_path}",  # Try in pdf directory
+            f"backend/pdf_uploads/{pdf_path}",  # Try in backend uploads
+            f"pdf/{pdf_path}.pdf" if not pdf_path.endswith('.pdf') else f"pdf/{pdf_path}",  # Try with .pdf extension
+        ]
+        
+        for search_path in search_paths:
+            if os.path.exists(search_path):
+                actual_pdf_path = search_path
+                break
+        
+        if not actual_pdf_path:
+            # List available PDFs to help user
+            available_pdfs = []
+            for search_dir in ["pdf", "backend/pdf_uploads"]:
+                if os.path.exists(search_dir):
+                    for file in os.listdir(search_dir):
+                        if file.lower().endswith('.pdf'):
+                            available_pdfs.append(f"{search_dir}/{file}")
+            
+            if available_pdfs:
+                return f"❌ PDF file '{pdf_path}' not found.\n\n" \
+                       f"📁 Available PDF files:\n" + \
+                       "\n".join([f"  • {pdf}" for pdf in available_pdfs]) + \
+                       f"\n\n💡 Please use one of the available files above, or upload a new PDF through the frontend."
+            else:
+                return f"❌ PDF file '{pdf_path}' not found and no PDF files are available.\n\n" \
+                       f"💡 Please upload a PDF file through the frontend first, or provide the full path to your PDF file."
+        
         # Generate output path if not provided
         if not output_path:
-            pdf_file = Path(pdf_path)
+            pdf_file = Path(actual_pdf_path)
             output_path = str(pdf_file.parent / f"{pdf_file.stem}_filled{pdf_file.suffix}")
         
-        print(f"🔄 Processing PDF: {pdf_path}")
+        print(f"🔄 Processing PDF: {actual_pdf_path}")
         
         # Step 1: Extract form fields
         with tempfile.TemporaryDirectory() as temp_dir:
             fields_json = os.path.join(temp_dir, "fields.json")
             result = subprocess.run([
                 "python", "pdf/json_dump2.py",
-                "--pdf", pdf_path,
+                "--pdf", actual_pdf_path,
                 "--out", fields_json
             ], check=True, capture_output=True, text=True)
             
@@ -121,13 +153,13 @@ def process_insurance_pdf(pdf_path: str, form_type: str = None, output_path: str
             # Step 4: Fill PDF
             result = subprocess.run([
                 "python", "pdf/autofill.py",
-                "--pdf-in", pdf_path,
+                "--pdf-in", actual_pdf_path,
                 "--pdf-out", output_path,
                 "--values", values_json
             ], check=True, capture_output=True, text=True)
         
         return f"✅ PDF processed successfully!\n\n" \
-               f"📄 Input PDF: {pdf_path}\n" \
+               f"📄 Input PDF: {actual_pdf_path}\n" \
                f"📄 Output PDF: {output_path}\n" \
                f"🏷️ Form type: {form_type or 'auto-detected'}\n" \
                f"📊 Processing completed successfully!"
@@ -146,7 +178,7 @@ def fill_health_declaration_form(pdf_path: str) -> str:
     sample data for fields like policy number, NRIC, contact details, etc.
     
     Args:
-        pdf_path: Path to the health declaration PDF file
+        pdf_path: Path to the health declaration PDF file (can be just filename)
     
     Returns:
         String with processing results
@@ -166,7 +198,7 @@ def fill_medical_claim_form(pdf_path: str) -> str:
     appropriate sample data for fields like diagnosis, hospital details, etc.
     
     Args:
-        pdf_path: Path to the medical claim PDF file
+        pdf_path: Path to the medical claim PDF file (can be just filename)
     
     Returns:
         String with processing results
@@ -178,12 +210,12 @@ def fill_medical_claim_form(pdf_path: str) -> str:
     return process_insurance_pdf(pdf_path, form_type="medical_claim")
 
 @tool
-def list_pdf_files(directory: str = "pdf") -> str:
+def list_pdf_files(directory: str = "all") -> str:
     """
-    List available PDF files in a directory.
+    List available PDF files in common directories.
     
     Args:
-        directory: Directory to search for PDF files (default: "pdf")
+        directory: Directory to search for PDF files (default: "all" searches common locations)
     
     Returns:
         String with list of PDF files
@@ -195,20 +227,37 @@ def list_pdf_files(directory: str = "pdf") -> str:
     try:
         from pathlib import Path
         
-        pdf_dir = Path(directory)
-        if not pdf_dir.exists():
-            return f"❌ Directory not found: {directory}"
+        # Define common PDF directories to search
+        search_dirs = []
+        if directory == "all":
+            search_dirs = ["pdf", "backend/pdf_uploads", "backend/pdf_processed"]
+        else:
+            search_dirs = [directory]
         
-        pdf_files = list(pdf_dir.glob("*.pdf"))
+        all_pdf_files = []
         
-        if not pdf_files:
-            return f"📄 No PDF files found in {directory}"
+        for search_dir in search_dirs:
+            pdf_dir = Path(search_dir)
+            if pdf_dir.exists():
+                pdf_files = list(pdf_dir.glob("*.pdf"))
+                for pdf_file in pdf_files:
+                    all_pdf_files.append({
+                        'name': pdf_file.name,
+                        'path': str(pdf_file),
+                        'size': pdf_file.stat().st_size,
+                        'directory': search_dir
+                    })
         
-        result = f"📄 Found {len(pdf_files)} PDF file(s) in {directory}:\n\n"
-        for i, pdf_file in enumerate(pdf_files, 1):
-            result += f"{i}. {pdf_file.name}\n"
-            result += f"   Path: {pdf_file}\n"
-            result += f"   Size: {pdf_file.stat().st_size} bytes\n\n"
+        if not all_pdf_files:
+            return f"📄 No PDF files found in any of the common directories.\n\n" \
+                   f"💡 Try uploading a PDF through the frontend first, or place PDF files in the 'pdf' directory."
+        
+        result = f"📄 Found {len(all_pdf_files)} PDF file(s):\n\n"
+        for i, pdf_info in enumerate(all_pdf_files, 1):
+            result += f"{i}. {pdf_info['name']}\n"
+            result += f"   📁 Directory: {pdf_info['directory']}\n"
+            result += f"   📍 Path: {pdf_info['path']}\n"
+            result += f"   📊 Size: {pdf_info['size']} bytes\n\n"
         
         return result
         
