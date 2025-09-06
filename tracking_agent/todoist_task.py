@@ -1,9 +1,17 @@
 # Function to add a task to Todoist
 def add_task_to_todoist(task_name, task_due=None, priority=None, labels=None):
     import requests
+    import os
+    from dotenv import load_dotenv
     
-    TODOIST_API_TOKEN = '8b2d9c28b628938c50081c85dfe03490fae5a241'
+    # Load environment variables
+    load_dotenv()
+    
+    TODOIST_API_TOKEN = os.getenv("TODOIST_API_TOKEN")
     TODOIST_API_URL = 'https://api.todoist.com/rest/v2/tasks'
+    
+    if not TODOIST_API_TOKEN:
+        return "Error: TODOIST_API_TOKEN not found in environment variables"
 
     headers = {
         'Authorization': f'Bearer {TODOIST_API_TOKEN}',
