@@ -17,7 +17,7 @@ from werkzeug.utils import secure_filename
 # Add the parent directory to the path so we can import superagent_test
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from superagent_test import router_agent
+from superagent_test import router_agent, analyze_medicine_image
 from google_calendar_service import GoogleCalendarService
 
 
@@ -230,7 +230,19 @@ def upload_medicine_image():
             except Exception:
                 index = {}
 
-        is_duplicate = file_hash in index
+        # Consider duplicate only if at least one existing file with the same hash is still present
+        is_duplicate = False
+        if file_hash in index:
+            existing_files = []
+            for fname in index[file_hash].get('filenames', []):
+                if os.path.exists(os.path.join(MED_IMAGES_FOLDER, fname)):
+                    existing_files.append(fname)
+            if existing_files:
+                is_duplicate = True
+                index[file_hash]['filenames'] = existing_files
+            else:
+                # All referenced files no longer exist; treat as new upload and reset list
+                index[file_hash]['filenames'] = []
 
         # Use secure filename and ensure unique name
         original_name = secure_filename(file.filename)
@@ -250,7 +262,8 @@ def upload_medicine_image():
         if file_hash not in index:
             index[file_hash] = {'filenames': [save_name]}
         else:
-            index[file_hash]['filenames'].append(save_name)
+            if save_name not in index[file_hash]['filenames']:
+                index[file_hash]['filenames'].append(save_name)
         with open(index_path, 'w') as f:
             json.dump(index, f, indent=2)
 
@@ -260,14 +273,9 @@ def upload_medicine_image():
         agent_response = None
         if not is_duplicate:
             try:
-                # Compose instruction for router to use Medicine Agent
-                rel_path_for_agent = os.path.relpath(save_path, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-                instruction = (
-                    "A new medicine photo has been uploaded for scheduling reminders. "
-                    f"Please use the MedicineAgent to read the image at '{rel_path_for_agent}' and create appropriate Google Calendar reminders. "
-                    "Ask clarifying questions if the schedule is ambiguous."
-                )
-                agent_response = extract_text(router_agent(instruction))
+                abs_path_for_agent = os.path.abspath(save_path)
+                # Directly invoke the analysis tool to avoid routing/text parsing issues
+                agent_response = extract_text(analyze_medicine_image(abs_path_for_agent))
             except Exception as e:
                 print(f"Error triggering MedicineAgent: {e}")
 

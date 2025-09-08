@@ -546,7 +546,7 @@ function App() {
         </div>
 
         <div className="chat-input-container">
-          <label className="upload-image-button" title="Upload medicine image">
+          <label className="upload-image-button" title="Upload medicine image" aria-label="Upload medicine image">
             <input type="file" accept="image/*" onChange={async (e) => {
               const file = e.target.files && e.target.files[0];
               if (!file) return;
@@ -587,7 +587,14 @@ function App() {
                 if (e.target) e.target.value = '';
               }
             }} style={{ display: 'none' }} />
-            {isUploadingImage ? 'Uploading…' : 'Upload Photo'}
+            {isUploadingImage ? (
+              <span style={{ fontSize: '12px' }}>...</span>
+            ) : (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 3L7.17 5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5H16.83L15 3H9Z" stroke="#ffffff" strokeWidth="1.5" fill="none"/>
+                <circle cx="12" cy="13" r="4" stroke="#ffffff" strokeWidth="1.5" fill="none"/>
+              </svg>
+            )}
           </label>
           <input 
             type="text" 

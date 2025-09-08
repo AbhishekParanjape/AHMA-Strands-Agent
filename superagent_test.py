@@ -57,6 +57,34 @@ def wellbeing_agent(query: str) -> str:
     agent = create_wellbeing_agent()
     return agent(query)
 
+# Medicine image analysis tool
+@tool
+def analyze_medicine_image(image_path: str) -> str:
+    """
+    Analyze a medicine image at the given absolute path and create calendar events.
+
+    Steps:
+    1) Use image_reader(image_path=...) to read text from the label/photo
+    2) Ask the Medicine Agent to extract name, dosage, schedule
+    3) Create Google Calendar reminders via create_calendar_event
+
+    Returns assistant text with details or any errors encountered.
+    """
+    try:
+        agent = create_medicine_agent()
+        # First, ensure the image is readable
+        _ = agent.tool.image_reader(image_path=image_path)
+        # Then instruct the agent to proceed with creating events
+        instruction = (
+            "Please analyze the uploaded medicine photo and set up reminders. "
+            "Extract medicine name, dosage, and schedule from the image you just read. "
+            "If timing or recurrence is missing, assume Asia/Singapore timezone and a reasonable schedule, "
+            "or ask clarifying questions. Then call create_calendar_event with appropriate recurrence."
+        )
+        return agent(instruction)
+    except Exception as e:
+        return f"❌ Failed to analyze medicine image: {e}"
+
 # PDF Processing Tools
 @tool
 def process_insurance_pdf(pdf_path: str, form_type: str = None, output_path: str = None) -> str:
@@ -302,7 +330,8 @@ router_agent = Agent(
         "- If unsure, confirm with the user on which function they would like to use.\n"
         "Forward the request to the correct agent and return their response."
     ),
-    tools=[medicine_agent, appointment_agent, todo_agent, wellbeing_agent, 
+    tools=[medicine_agent, appointment_agent, todo_agent, wellbeing_agent,
+           analyze_medicine_image,
            process_insurance_pdf, fill_health_declaration_form, fill_medical_claim_form, list_pdf_files]
 )
 
