@@ -4,7 +4,7 @@ def create_medicine_agent():
     import boto3
     import os 
 
-    from .google_event import create_event
+    from reminders_agent.google_event import create_event
 
     # Bedrock client (credentials already set)
     bedrock = boto3.client(
@@ -37,8 +37,14 @@ def create_medicine_agent():
             - Use RFC 5545 RRULE syntax for recurrence.
             - If timezone is not provided, assume Asia/Singapore. 
             - If user does not specify when to start medicine, assume today. 
+            - Create only unique reminders (check memory first).
+            - Store reminders in memory so you can recall them later.
         """
-        return create_event(summary, start_time, end_time, location, description, recurrence)
+
+        link = create_event(summary, start_time, end_time, location, description, recurrence)
+
+        return f"✅ Event created: {link}"
+
 
     agent = Agent(
         name="MedicineAgent",
@@ -54,7 +60,7 @@ def create_medicine_agent():
     """
     )
 
-    # Basic usage - read an image file
+    # Read an image file
     for image in os.listdir("med_images_test"):
         result = agent.tool.image_reader(image_path="med_images_test/" + image)
 
