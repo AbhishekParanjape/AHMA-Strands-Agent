@@ -63,10 +63,6 @@ def test():
     agent = create_appointments_agent()
 
     message = """
-    I want blueberries on my pancakes now. I want Eliana and Zoe to be there with me. At Cendana Buttery.
-    """
-
-    """
     I have a doctors appointment tomorrow 3 september 2025 at 4pm at Changi General Hospital. 
     """
     """

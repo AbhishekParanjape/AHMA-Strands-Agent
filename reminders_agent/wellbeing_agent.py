@@ -1,6 +1,6 @@
 def create_wellbeing_agent():
     from strands import Agent, tool
-    from strands_tools import image_reader, current_time
+    from strands_tools import current_time
     import boto3
     import os 
 
