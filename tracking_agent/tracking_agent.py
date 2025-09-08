@@ -6,8 +6,7 @@ import boto3
 bedrock = boto3.client(
     service_name="bedrock-runtime",
     region_name="us-east-1",
-    aws_access_key_id="AKIA5KCDYHD2U5DEBI6K",
-    aws_secret_access_key="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"
+ 
 )
 
 # Custom tool
