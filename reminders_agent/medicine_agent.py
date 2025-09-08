@@ -37,8 +37,6 @@ def create_medicine_agent():
             - Use RFC 5545 RRULE syntax for recurrence.
             - If timezone is not provided, assume Asia/Singapore. 
             - If user does not specify when to start medicine, assume today. 
-            - Create only unique reminders (check memory first).
-            - Store reminders in memory so you can recall them later.
         """
 
         link = create_event(summary, start_time, end_time, location, description, recurrence)
