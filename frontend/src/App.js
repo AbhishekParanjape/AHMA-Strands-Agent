@@ -8,6 +8,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [isUploadingImage, setIsUploadingImage] = useState(false);
   const [calendarEvents, setCalendarEvents] = useState([]);
   const [todoistTasks, setTodoistTasks] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -545,6 +546,49 @@ function App() {
         </div>
 
         <div className="chat-input-container">
+          <label className="upload-image-button" title="Upload medicine image">
+            <input type="file" accept="image/*" onChange={async (e) => {
+              const file = e.target.files && e.target.files[0];
+              if (!file) return;
+              try {
+                setIsUploadingImage(true);
+                const formData = new FormData();
+                formData.append('file', file);
+                const resp = await fetch('/api/medicine/upload-image', {
+                  method: 'POST',
+                  body: formData,
+                });
+                const data = await resp.json();
+                const status = data.success
+                  ? (data.duplicate ? 'Duplicate image. Skipped.' : 'Image uploaded. Processing...')
+                  : `Upload failed: ${data.error || 'Unknown error'}`;
+                const previewUrl = data.success ? data.preview_url : '';
+                setMessages((prev) => ([
+                  ...prev,
+                  {
+                    id: Date.now() + Math.random(),
+                    sender: 'assistant',
+                    content: `${previewUrl ? `![uploaded image](${previewUrl})\n\n` : ''}${status}${data.agent_response ? `\n\n${data.agent_response}` : ''}`,
+                    timestamp: new Date().toISOString(),
+                  }
+                ]));
+              } catch (err) {
+                setMessages((prev) => ([
+                  ...prev,
+                  {
+                    id: Date.now() + Math.random(),
+                    sender: 'assistant',
+                    content: `Image upload error: ${err.message}`,
+                    timestamp: new Date().toISOString(),
+                  }
+                ]));
+              } finally {
+                setIsUploadingImage(false);
+                if (e.target) e.target.value = '';
+              }
+            }} style={{ display: 'none' }} />
+            {isUploadingImage ? 'Uploading…' : 'Upload Photo'}
+          </label>
           <input 
             type="text" 
             value={inputMessage}

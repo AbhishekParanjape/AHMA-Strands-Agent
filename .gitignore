@@ -1,5 +1,9 @@
 .DS_Store
 .env
+# node_modules
+node_modules/
+
+# awscli-bundle
 awscli-bundle/packages/awscli-1.42.16.tar.gz
 awscli-bundle/packages/botocore-1.40.16.tar.gz
 awscli-bundle/packages/colorama-0.4.5.tar.gz

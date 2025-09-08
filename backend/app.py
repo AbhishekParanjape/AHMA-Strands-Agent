@@ -34,6 +34,10 @@ UPLOAD_FOLDER = 'pdf_uploads'
 PROCESSED_FOLDER = 'pdf_processed'
 ALLOWED_EXTENSIONS = {'pdf'}
 
+# Medicine images configuration
+MED_IMAGES_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'med_images_test')
+os.makedirs(MED_IMAGES_FOLDER, exist_ok=True)
+
 # Create upload directories if they don't exist
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(PROCESSED_FOLDER, exist_ok=True)
@@ -194,6 +198,106 @@ def chat():
     except Exception as e:
         print(f"Error processing chat message: {repr(e)}")
         return jsonify({'error': 'Internal server error', 'success': False}), 500
+
+
+@app.route('/api/medicine/upload-image', methods=['POST'])
+def upload_medicine_image():
+    """
+    Upload a medicine-related image to med_images_test/ with duplicate detection.
+    If not a duplicate, trigger the routing agent to use the Medicine Agent to create events.
+    """
+    try:
+        if 'file' not in request.files:
+            return jsonify({'success': False, 'error': 'No file provided'}), 400
+
+        file = request.files['file']
+        if file.filename == '':
+            return jsonify({'success': False, 'error': 'No file selected'}), 400
+
+        # Save to a temp buffer to compute hash
+        import hashlib
+        import io
+        file_bytes = file.read()
+        file_hash = hashlib.sha256(file_bytes).hexdigest()
+
+        # Load or create index.json for duplicate tracking
+        index_path = os.path.join(MED_IMAGES_FOLDER, 'index.json')
+        index = {}
+        if os.path.exists(index_path):
+            try:
+                with open(index_path, 'r') as f:
+                    index = json.load(f)
+            except Exception:
+                index = {}
+
+        is_duplicate = file_hash in index
+
+        # Use secure filename and ensure unique name
+        original_name = secure_filename(file.filename)
+        name_no_ext, ext = os.path.splitext(original_name)
+        save_name = original_name
+        counter = 1
+        while os.path.exists(os.path.join(MED_IMAGES_FOLDER, save_name)):
+            save_name = f"{name_no_ext}_{counter}{ext}"
+            counter += 1
+
+        # Save file
+        save_path = os.path.join(MED_IMAGES_FOLDER, save_name)
+        with open(save_path, 'wb') as out:
+            out.write(file_bytes)
+
+        # Update index
+        if file_hash not in index:
+            index[file_hash] = {'filenames': [save_name]}
+        else:
+            index[file_hash]['filenames'].append(save_name)
+        with open(index_path, 'w') as f:
+            json.dump(index, f, indent=2)
+
+        # Build preview URL served by backend
+        preview_url = f"/api/medicine/image/{save_name}"
+
+        agent_response = None
+        if not is_duplicate:
+            try:
+                # Compose instruction for router to use Medicine Agent
+                rel_path_for_agent = os.path.relpath(save_path, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+                instruction = (
+                    "A new medicine photo has been uploaded for scheduling reminders. "
+                    f"Please use the MedicineAgent to read the image at '{rel_path_for_agent}' and create appropriate Google Calendar reminders. "
+                    "Ask clarifying questions if the schedule is ambiguous."
+                )
+                agent_response = extract_text(router_agent(instruction))
+            except Exception as e:
+                print(f"Error triggering MedicineAgent: {e}")
+
+        return jsonify({
+            'success': True,
+            'filename': save_name,
+            'duplicate': is_duplicate,
+            'preview_url': preview_url,
+            'agent_response': agent_response
+        })
+
+    except Exception as e:
+        print(f"Error uploading medicine image: {e}")
+        return jsonify({'success': False, 'error': 'Failed to upload image'}), 500
+
+
+@app.route('/api/medicine/image/<path:filename>', methods=['GET'])
+def get_medicine_image(filename):
+    """
+    Serve an uploaded medicine image from med_images_test/.
+    """
+    try:
+        safe_name = secure_filename(filename)
+        image_path = os.path.join(MED_IMAGES_FOLDER, safe_name)
+        if not os.path.exists(image_path):
+            return jsonify({'success': False, 'error': 'Image not found'}), 404
+        return send_file(image_path)
+    except Exception as e:
+        print(f"Error serving medicine image: {e}")
+        return jsonify({'success': False, 'error': 'Failed to fetch image'}), 500
 
 
 @app.route('/api/google-calendar/events', methods=['GET'])
