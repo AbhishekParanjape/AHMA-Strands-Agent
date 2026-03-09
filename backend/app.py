@@ -19,6 +19,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from superagent_test import router_agent, analyze_medicine_image
 from google_calendar_service import GoogleCalendarService
+from ultravox_integration import register_ultravox_routes
 
 
 load_dotenv()  # Load environment variables from .env if present
@@ -648,6 +649,9 @@ def delete_pdf(filename):
     except Exception as e:
         print(f"Error deleting PDF: {str(e)}")
         return jsonify({'error': 'Failed to delete file', 'success': False}), 500
+
+# Register Ultravox integration routes
+register_ultravox_routes(app)
 
 @app.route('/health', methods=['GET'])
 def health_check():
